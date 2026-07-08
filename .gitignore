@@ -1,0 +1,39 @@
+node_modules
+
+# Output
+.output
+.vercel
+.netlify
+.wrangler
+/.svelte-kit
+/build
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.*
+!.env.example
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# ── Supports de cours (SOURCES) — NE JAMAIS committer ni publier ──
+# Ces documents servent UNIQUEMENT de base locale pour rédiger le contenu.
+# Ils ne doivent jamais être poussés sur GitHub ni téléchargeables sur le site.
+# Déposez-les dans _sources/ (ou gardez-les hors du dépôt, ex. ../Archive internat).
+/_sources/
+/sources/
+Archive*/
+*.pdf
+*.pptx
+*.ppt
+*.docx
+*.doc
+*.xlsx
+*.pages
+*.key
+# (Pour publier volontairement UN fichier, forcez : git add -f static/mon-fichier.pdf)

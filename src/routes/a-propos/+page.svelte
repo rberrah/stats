@@ -1,0 +1,55 @@
+<script>
+  import { base } from '$app/paths';
+</script>
+
+<article class="about">
+  <p class="eyebrow">À propos</p>
+  <h1>La biostatistique, pour comprendre et non subir</h1>
+
+  <p class="lede">
+    Ce site enseigne les méthodes statistiques utiles en médecine et en biologie —
+    des pourcentages aux tests des rangs — en privilégiant l'<strong>intuition</strong> :
+    pourquoi un test fonctionne, avant sa formule, avec des schémas que l'on manipule.
+  </p>
+
+  <h2>Comment c'est organisé</h2>
+  <ul>
+    <li><strong>Le cours</strong> — 6 parties, de la démarche statistique jusqu'aux tests non paramétriques.</li>
+    <li><strong>Chapitres</strong> — se lisent en défilant ; une visualisation interactive accompagne le texte.</li>
+    <li><strong>Fiches</strong> — la synthèse « à retenir » de chaque chapitre, pour réviser vite.</li>
+    <li><strong>Entraînement</strong> — QCM et exercices d'application corrigés.</li>
+    <li><strong>Glossaire</strong> — les termes clés, reliés depuis les chapitres.</li>
+  </ul>
+
+  <h2>Un plan éprouvé</h2>
+  <p>
+    La <strong>progression pédagogique</strong> s'inspire d'un ouvrage de référence,
+    <em>Méthodes statistiques à l'usage des médecins et des biologistes</em> de Daniel Schwartz
+    (Médecine-Sciences Flammarion) — un classique de l'enseignement de la biostatistique en France.
+    Cet ouvrage a guidé l'<strong>ordre des thèmes</strong> ; en revanche, tous les textes,
+    exemples chiffrés et visualisations de ce site sont <strong>originaux</strong>. Les méthodes
+    exposées (écart-réduit, tests, χ², t, F, analyse de la variance, régression, tests des rangs)
+    relèvent du savoir statistique commun.
+  </p>
+
+  <h2>Honnête sur ses limites</h2>
+  <p>
+    Support pédagogique d'entraide : il <strong>ne remplace pas</strong> un cours complet ni les
+    ouvrages de référence, et peut contenir des imprécisions — toute correction est bienvenue.
+  </p>
+
+  <div class="cta">
+    <a class="btn btn-primary" href={`${base}/chapitres`}>Commencer le cours</a>
+  </div>
+</article>
+
+<style>
+  .about { max-width: 720px; }
+  h1 { font-size: var(--text-3xl); margin: var(--space-2) 0 var(--space-4); }
+  h2 { font-size: var(--text-xl); margin: var(--space-8) 0 var(--space-3); }
+  .lede { color: var(--text-secondary); font-size: var(--text-lg); }
+  ul { color: var(--text-secondary); padding-left: 1.2em; }
+  li { margin-bottom: var(--space-2); }
+  p { color: var(--text-secondary); }
+  .cta { margin-top: var(--space-8); }
+</style>
