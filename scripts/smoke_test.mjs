@@ -87,6 +87,12 @@ const glossTerms = new Set(glossary.map((g) => g.term));
 const badGloss = chapters.flatMap((c) => (c.data.glossary ?? []).filter((t) => !glossTerms.has(t)));
 check(badGloss.length === 0, `termes de glossaire référencés tous définis`);
 
+// 11. assistant « Quel test choisir ? » : tous les liens vers le cours résolvent
+const { chooserSlugs } = await import(url.pathToFileURL(path.join(root, 'src/lib/content/choixTest.js')));
+const chooser = chooserSlugs();
+const badChooser = [...new Set(chooser)].filter((s) => !slugSet.has(s));
+check(badChooser.length === 0, `assistant « quel test » : ${chooser.length} liens vers le cours résolvent` + (badChooser.length ? ` — cassés : ${badChooser.join(', ')}` : ''));
+
 if (fail.length) {
   console.error('\nSmoke tests ÉCHOUÉS :\n' + fail.map((m) => '  ✗ ' + m).join('\n'));
   process.exit(1);
