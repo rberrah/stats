@@ -84,6 +84,22 @@ export const sections = [
       { n: '3', l: 'Épreuve graphique de normalité (droite de Henry)' },
       { n: '4', l: 'α, β, puissance et taille d\'échantillon : la synthèse' }
     ] }]
+  },
+  {
+    id: 'G', roman: 'G', titre: 'Épidémiologie clinique & méthodes modernes', accent: '#b45309',
+    tagline: "Au-delà des tests classiques : interpréter un sondage, mesurer un risque, évaluer un test diagnostique, déjouer les biais, analyser la survie (Kaplan-Meier, Cox).",
+    groupes: [{ items: [
+      { n: '1', l: 'Interpréter un sondage : marge d\'erreur, taille d\'échantillon, représentativité' },
+      { n: '2', l: 'Mesurer un risque : risque relatif, odds ratio, réduction absolue, NNT' },
+      { n: '3', l: 'Évaluer un test diagnostique : sensibilité, spécificité, VPP et VPN' },
+      { n: '4', l: 'La courbe ROC et le choix d\'un seuil' },
+      { n: '5', l: 'Schémas d\'étude : cohorte, cas-témoins, essai randomisé' },
+      { n: '6', l: 'Les biais : sélection, classement, confusion' },
+      { n: '7', l: 'Le biais de temps immortel' },
+      { n: '8', l: 'Analyse de survie : Kaplan-Meier et test du log-rank' },
+      { n: '9', l: 'Le modèle de Cox et le hazard ratio' },
+      { n: '10', l: 'La régression logistique' }
+    ] }]
   }
 ];
 
