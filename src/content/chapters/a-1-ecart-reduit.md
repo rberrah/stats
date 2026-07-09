@@ -75,16 +75,30 @@ $$z = \dfrac{0{,}25 - 0{,}20}{0{,}02} = 2{,}5$$
 La fréquence observée est à **2,5 écarts-types** au-dessus de la valeur attendue. Le graphique traduit cet écart-réduit sur la courbe des fluctuations possibles.
 <!-- /step -->
 
-<!-- step:title="Le seuil de 1,96 et la loi normale" -->
+<!-- step:title="D'où vient le fameux 1,96 ?" -->
 :::howto
 **Comment lire le schéma.** La courbe en cloche représente toutes les fréquences que le hasard peut produire autour de $p$. Déplacez $n$ : la cloche se resserre. Déplacez $f$ : le trait vertical se décale et l'écart-réduit affiché change. La zone sombre aux deux extrémités correspond aux 5 % de tirages les plus surprenants.
 :::
 
-Dès que $n$ est un peu grand, l'écart-réduit $z$ suit **approximativement une loi normale** centrée sur 0 et d'écart-type 1. Or cette loi a une propriété que l'on retrouvera partout dans ce cours : **95 % des valeurs tombent entre −1,96 et +1,96**.
+Dès que $n$ est un peu grand, l'écart-réduit $z$ suit **approximativement une loi normale** centrée sur 0, d'écart-type 1. Le nombre **1,96** n'a alors rien d'arbitraire : on peut le retrouver pas à pas.
 
-Autrement dit, si $f$ n'est qu'une fluctuation autour de $p$, son écart-réduit dépasse 1,96 (en valeur absolue) une fois sur vingt seulement. Un $z$ au-delà de ce repère signale un écart *inhabituellement grand* pour une simple fluctuation.
+**1. L'aire sous la cloche vaut 1**, soit 100 % des tirages possibles. Chaque tranche d'aire est une probabilité.
 
-Nos $z = 2{,}5$ dépasse 1,96 : l'écart entre 25 % et 20 % est difficile à mettre sur le seul compte du hasard. C'est exactement ce raisonnement que le chapitre suivant transformera en **test**.
+**2. On veut encadrer les 95 % de tirages les plus banals.** Il faut donc **laisser 5 % de côté** — les plus extrêmes. Comme la cloche est symétrique, on partage ces 5 % en deux queues égales : **2,5 % à droite et 2,5 % à gauche**.
+
+**3. On lit dans la table de la loi normale** la valeur qui laisse exactement **2,5 % au-delà d'elle** : c'est **1,96**. Par symétrie, 2,5 % se trouvent aussi en dessous de $-1{,}96$. Entre les deux : $100 - 2{,}5 - 2{,}5 = 95\ \%$. Voilà le nombre.
+
+C'est pourquoi « **95 % de confiance** » et « **risque de 5 %** » sont les deux faces d'une même pièce : les 5 % abandonnés dans les queues sont précisément le risque de prendre une simple fluctuation pour un vrai écart. Le 1,96 n'est donc que **le repère du niveau 95 %**. Exigez une autre garantie, et il change :
+
+| Niveau de confiance | Risque toléré (bilatéral) | Valeur seuil |
+|---|---|---|
+| 90 % | 10 % | 1,64 |
+| 95 % | 5 % | **1,96** |
+| 99 % | 1 % | 2,58 |
+
+Plus on veut être sûr de ne pas se tromper, plus on doit **élargir** l'intervalle : le seuil grimpe. Vous pouvez le vérifier sur le schéma du chapitre B‑1 (loi normale) en amenant les bornes à $\pm 1{,}96$ : l'aire hachurée affiche bien 95 %.
+
+Conséquence : si $f$ n'est qu'une fluctuation autour de $p$, son écart-réduit ne dépasse 1,96 en valeur absolue qu'**une fois sur vingt**. Nos $z = 2{,}5$ franchit ce repère : l'écart entre 25 % et 20 % est difficile à mettre sur le seul compte du hasard — c'est exactement ce raisonnement que le chapitre suivant transformera en **test**.
 <!-- /step -->
 
 <!-- step:title="Le piège du petit échantillon" -->

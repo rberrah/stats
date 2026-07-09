@@ -42,6 +42,10 @@ La demi-largeur de l'intervalle de confiance à 95 % d'un pourcentage $f$ observ
 
 $$m = 1{,}96 \sqrt{\dfrac{f(1-f)}{n}}$$
 
+:::recall
+**Pourquoi 1,96 ?** C'est le repère du niveau **95 %** dans la loi normale : il laisse 2,5 % des tirages dans chaque queue, soit $2 \times 2{,}5 = 5\ \%$ de risque au total. Pour une confiance de 90 % on prendrait 1,64, pour 99 % on prendrait 2,58. La construction pas à pas est détaillée au chapitre A‑1 (« D'où vient le fameux 1,96 ? »).
+:::
+
 Le produit $f(1-f)$ est maximal quand $f = 0{,}5$ (où il vaut $0{,}25$). C'est le cas **le plus défavorable**, celui que les instituts annoncent par prudence. En y remplaçant $f$ par $0{,}5$ :
 
 $$m_{\max} = 1{,}96 \sqrt{\dfrac{0{,}25}{n}} = \dfrac{1{,}96 \times 0{,}5}{\sqrt{n}} = \dfrac{0{,}98}{\sqrt{n}} \approx \dfrac{1}{\sqrt{n}}$$

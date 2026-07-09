@@ -214,6 +214,10 @@
   .prose :global(strong) { color: var(--text-primary); }
   .prose :global(ul), .prose :global(ol) { color: var(--text-secondary); padding-left: 1.2em; }
   .prose :global(li) { margin-bottom: var(--space-2); }
+  .prose :global(table) { width: 100%; border-collapse: collapse; margin: var(--space-4) 0; font-size: var(--text-sm); display: block; overflow-x: auto; }
+  .prose :global(thead th) { font-family: var(--font-mono); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.03em; color: var(--text-muted); text-align: left; }
+  .prose :global(th), .prose :global(td) { border: 1px solid var(--border-subtle); padding: var(--space-2) var(--space-3); text-align: left; color: var(--text-secondary); }
+  .prose :global(tbody tr:nth-child(even)) { background: var(--bg-tertiary); }
   .prose :global(.math-rendered) { overflow-x: auto; }
   .prose :global(.math-display) { margin: var(--space-6) 0; padding: var(--space-4); background: var(--bg-tertiary); border: 1px solid var(--border-subtle); border-radius: var(--radius); }
   .prose :global(.katex-display) { margin: var(--space-6) 0; padding: var(--space-4); background: var(--bg-tertiary); border: 1px solid var(--border-subtle); border-radius: var(--radius); overflow-x: auto; }

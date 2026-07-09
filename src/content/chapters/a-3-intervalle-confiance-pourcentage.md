@@ -44,6 +44,10 @@ $$\text{IC}_{95\%} = f \pm 1{,}96 \sqrt{\dfrac{f(1-f)}{n}}$$
 
 La quantité $\sqrt{f(1-f)/n}$ est l'erreur-standard estimée ; le facteur 1,96 fixe le niveau de confiance à 95 %.
 
+:::recall
+**Le 1,96, encore lui.** Il vaut pour une confiance de 95 % parce qu'il laisse 2,5 % de chaque côté de la loi normale (5 % au total). Voulez-vous une fourchette « à 99 % » ? Remplacez 1,96 par **2,58**, et elle s'élargit. À 90 %, prenez **1,64**. L'origine de ces valeurs est détaillée au chapitre A‑1.
+:::
+
 Sur nos 300 patients :
 
 $$\sqrt{\dfrac{0{,}15 \times 0{,}85}{300}} = \sqrt{0{,}000425} \approx 0{,}0206$$
