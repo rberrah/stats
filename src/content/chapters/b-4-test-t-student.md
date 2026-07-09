@@ -86,6 +86,10 @@ La table donne, pour chaque nombre de degrés de liberté $\nu$ et chaque risque
 - $\nu \to \infty \rightarrow 1{,}96$ (la loi normale)
 
 Deux enseignements : le seuil **diminue** quand $\nu$ augmente (plus de données, moins d'exigence sur $t$), et il converge vers la valeur 1,96 de la loi normale pour les grands échantillons.
+
+:::note
+**Pourquoi le seuil dépasse-t-il 1,96 ?** Avec la loi normale, on faisait comme si l'on connaissait l'écart-type des fluctuations. Ici, on ne le connaît pas : on l'**estime** à partir du même (petit) échantillon, via $s$. Cette estimation est elle-même incertaine — d'autant plus que $n$ est petit — et cette incertitude *supplémentaire* épaissit les queues de la loi de Student. Il faut donc un seuil un peu **plus grand** que 1,96 pour tenir le risque à 5 %. Quand $n$ grandit, $s$ devient une mesure fiable de $\sigma$ : la loi de Student rejoint la loi normale et le seuil retombe sur 1,96. Le « ≈ 2 » usuel n'est donc que le 1,96 de la loi normale, un peu gonflé par notre ignorance de $\sigma$.
+:::
 <!-- /step -->
 
 <!-- step:title="Les conditions d'application" -->

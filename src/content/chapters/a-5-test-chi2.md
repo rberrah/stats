@@ -82,6 +82,10 @@ La table du χ² donne, pour chaque ddl, la valeur seuil au risque de 5 %. Quelq
 | 3 | 7,81 |
 | 4 | 9,49 |
 
+:::note
+**D'où sort le 7,81 ?** Le χ² est une **somme de carrés** d'écarts qui suivent chacun ~une loi normale. Plus il y a de catégories (donc de degrés de liberté), plus cette somme est naturellement grande, *même sous $H_0$* — le seuil doit donc monter avec les ddl. Chaque valeur de la table (3,84 ; 5,99 ; 7,81…) est simplement le point qui laisse **5 % de l'aire dans la queue droite** de la loi du χ² correspondante : exactement la même logique de « 5 % au-delà » que le 1,96 de la loi normale, mais pour une distribution non symétrique qui s'étale à droite quand les ddl augmentent.
+:::
+
 Notre $\chi^2 = 2{,}00$ est **très inférieur** au seuil de 7,81. On **ne rejette pas** $H_0$ : la répartition des groupes sanguins observée est **compatible** avec la référence. L'écart global est de l'ordre de ce que le hasard produit couramment.
 <!-- /step -->
 

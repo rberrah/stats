@@ -72,6 +72,10 @@ L'écart observé vaut **2,33 écarts-types**. Sur le graphique des deux risques
 
 Avant de regarder les données, on fixe un **seuil de décision** $\alpha$, presque toujours **5 %**. Il représente le risque qu'on s'autorise de rejeter $H_0$ *à tort* — le **risque de première espèce**.
 
+:::note
+**Pourquoi 5 % ?** Ce seuil n'a rien d'une loi de la nature : c'est une **convention**, popularisée par le statisticien R. A. Fisher dans les années 1920 (« une chance sur vingt » lui semblait un repère commode). Il traduit un compromis : abaisser α (1 %, 0,1 %) réduit les fausses alertes, mais laisse passer davantage de vraies différences — le risque β augmente en retour (voir F‑4). 5 % est donc un point d'équilibre usuel, pas une vérité : un dépistage aux conséquences lourdes exigera 1 %, une étude exploratoire tolérera 10 %. La seule règle stricte est de **fixer α *avant* de regarder les données**.
+:::
+
 Pour un test bilatéral à $\alpha = 5\%$, la frontière est notre vieille connaissance **1,96**. La règle :
 
 - si $|z| > 1{,}96$ : on **rejette** $H_0$, l'écart est dit *significatif* ;
