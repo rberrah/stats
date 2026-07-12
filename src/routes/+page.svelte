@@ -19,7 +19,7 @@
     <a class="btn btn-primary" href={`${base}/chapitres`}>Parcourir le cours</a>
     <a class="btn btn-outline" href={`${base}/exercices`}>S'entraîner</a>
   </div>
-  <p class="stat">{total} chapitre{total > 1 ? 's' : ''} · 6 parties, du pari statistique aux tests des rangs</p>
+  <p class="stat">{total} chapitre{total > 1 ? 's' : ''} · {tracks.length} parties, du pari statistique à l'épidémiologie clinique</p>
 </section>
 
 <section class="grid">

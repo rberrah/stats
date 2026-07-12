@@ -12,6 +12,7 @@
     { href: '/fiches', key: 'fiches', label: 'Fiches' },
     { href: '/exercices', key: 'exercises', label: 'Entraînement' },
     { href: '/glossaire', key: 'glossary', label: 'Glossaire' },
+    { href: '/references', key: 'refs', label: 'Références' },
     { href: '/a-propos', key: 'about', label: 'À propos' }
   ];
 
@@ -49,7 +50,7 @@
   <footer>
     <span>Contenu pédagogique original · CC BY-NC-SA 4.0</span>
     <span class="muted">
-      Écrit et maintenu par Racym Berrah (PharmD) ·
+      Écrit et maintenu par Racym Berrah, PharmD, doctorant en pharmacométrie ·
       <a href="https://github.com/rberrah/stats/issues/new" target="_blank" rel="noopener noreferrer">Une erreur ? Signalez-la</a>
     </span>
   </footer>
