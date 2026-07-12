@@ -1,5 +1,5 @@
-/* Internat Pharma — design system tokens & base styles
-   Palette « médicale » (teal primaire) pour se distinguer du site pharmacométrie. */
+/* Stat & Biologie — design system tokens & base styles
+   Palette indigo (primaire) pour se distinguer des sites internat (teal) et pharmacométrie (terracotta). */
 
 :root {
   --font-heading: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;

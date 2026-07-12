@@ -47,12 +47,15 @@
   </main>
 
   <footer>
-    <span>Contenu pédagogique original · CC BY-NC-SA</span>
-    <span class="muted">Biostatistique pour les médecins et les biologistes.</span>
+    <span>Contenu pédagogique original · CC BY-NC-SA 4.0</span>
+    <span class="muted">
+      Écrit et maintenu par Racym Berrah (PharmD) ·
+      <a href="https://github.com/rberrah/stats/issues/new" target="_blank" rel="noopener noreferrer">Une erreur ? Signalez-la</a>
+    </span>
   </footer>
 
   <div class="disclaimer" role="note">
-    Cours original · plan inspiré de D. Schwartz, <em>Méthodes statistiques à l'usage des médecins et des biologistes</em>.
+    Cours de biostatistique original — support pédagogique, ne remplace pas un cours complet ni les ouvrages de référence.
   </div>
 </div>
 

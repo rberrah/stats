@@ -6,9 +6,9 @@ corrélation…), exercices et QCM corrigés — pour **comprendre** le raisonne
 seulement appliquer une formule.
 
 Construit sur la même architecture que les autres sites (SvelteKit + adapter-static),
-**français uniquement**. La progression pédagogique s'inspire d'un classique du domaine,
-*Méthodes statistiques à l'usage des médecins et des biologistes* (D. Schwartz) ; tout le
-contenu (textes, exemples chiffrés, visualisations) est **original**.
+**français uniquement**. La progression suit l'ordre classique de l'enseignement de la
+biostatistique ; **tout le contenu (textes, exemples chiffrés, visualisations) est original**.
+Des ouvrages de référence sont cités en bibliographie dans la page « À propos ».
 
 ## Démarrage
 

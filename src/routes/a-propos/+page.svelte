@@ -21,16 +21,27 @@
     <li><strong>Glossaire</strong> — les termes clés, reliés depuis les chapitres.</li>
   </ul>
 
-  <h2>Un plan éprouvé</h2>
+  <h2>La progression</h2>
   <p>
-    La <strong>progression pédagogique</strong> s'inspire d'un ouvrage de référence,
-    <em>Méthodes statistiques à l'usage des médecins et des biologistes</em> de Daniel Schwartz
-    (Médecine-Sciences Flammarion) — un classique de l'enseignement de la biostatistique en France.
-    Cet ouvrage a guidé l'<strong>ordre des thèmes</strong> ; en revanche, tous les textes,
-    exemples chiffrés et visualisations de ce site sont <strong>originaux</strong>. Les méthodes
-    exposées (écart-réduit, tests, χ², t, F, analyse de la variance, régression, tests des rangs)
-    relèvent du savoir statistique commun.
+    Le cours suit la progression <strong>classique</strong> de l'enseignement de la biostatistique :
+    on part de la variabilité et des fluctuations d'échantillonnage, on en tire le principe des
+    tests, puis on décline selon la nature des variables (pourcentages, moyennes, liaisons), avant
+    les tests non paramétriques et, enfin, les méthodes modernes d'épidémiologie clinique. Les
+    méthodes exposées (écart-réduit, χ², t, F, analyse de la variance, régression, tests des rangs,
+    survie) relèvent du <strong>savoir statistique commun</strong>, enseigné partout dans cet ordre.
   </p>
+  <p>
+    <strong>Tous les textes, exemples chiffrés et visualisations de ce site sont originaux.</strong>
+    Aucun contenu n'est repris d'un ouvrage existant.
+  </p>
+
+  <h2>Pour aller plus loin</h2>
+  <p>Quelques ouvrages de référence, à consulter pour approfondir :</p>
+  <ul>
+    <li>D. Schwartz, <em>Méthodes statistiques à l'usage des médecins et des biologistes</em>, Médecine-Sciences Flammarion — le classique français de la biostatistique médicale.</li>
+    <li>D. G. Altman, <em>Practical Statistics for Medical Research</em>, Chapman &amp; Hall.</li>
+    <li>M. Bouyer et al., <em>Épidémiologie : principes et méthodes quantitatives</em>, Lavoisier.</li>
+  </ul>
 
   <h2>Honnête sur ses limites</h2>
   <p>

@@ -1,9 +1,9 @@
 // @ts-nocheck
 // PLAN DU COURS « Stat & Biologie ».
-// Contenu original ; la PROGRESSION pédagogique (l'ordre des thèmes) s'inspire de
-// D. Schwartz, « Méthodes statistiques à l'usage des médecins et des biologistes »
-// (Flammarion) — une référence du domaine. Les méthodes elles-mêmes (écart-réduit,
-// tests, χ², t, F, ANOVA, régression, tests des rangs) relèvent du savoir public.
+// Contenu 100 % original. La progression suit l'ordre CLASSIQUE de l'enseignement
+// de la biostatistique (variabilité → principe des tests → pourcentages → moyennes →
+// liaisons → non paramétrique → épidémiologie clinique) : les méthodes (écart-réduit,
+// χ², t, F, ANOVA, régression, tests des rangs, survie) relèvent du savoir public.
 //
 // 6 parties, chacune découpée en items numérotés. Un chapitre se rattache à un item
 // via son frontmatter `programItem` (ex. "A-3") et `track` (ex. "section-A").

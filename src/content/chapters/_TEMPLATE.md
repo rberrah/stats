@@ -21,7 +21,7 @@ quiz:
 ---
 
 <!-- step:title="Pourquoi ce chapitre" -->
-Le problème posé, en une ou deux phrases, et pourquoi il compte pour l'internat.
+Le problème posé, en une ou deux phrases, et pourquoi il compte en pratique.
 <!-- /step -->
 
 <!-- step:title="L'essentiel" -->

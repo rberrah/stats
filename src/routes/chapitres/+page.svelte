@@ -17,9 +17,9 @@
 </script>
 
 <header class="head">
-  <p class="eyebrow">Programme officiel · Arrêté du 12 avril 2012</p>
-  <h1>Le programme, item par item</h1>
-  <p class="lede">Le site suit les <strong>5 sections officielles</strong> du concours. Chaque item est listé ; ceux déjà rédigés sont cliquables, les autres arrivent.</p>
+  <p class="eyebrow">Le cours · 7 parties</p>
+  <h1>Le plan, chapitre par chapitre</h1>
+  <p class="lede">Des fondations au choix du test : <strong>7 parties</strong>, des pourcentages aux méthodes modernes d'épidémiologie clinique. Chaque chapitre est listé ; les titres rédigés sont cliquables.</p>
 </header>
 
 {#if transversal.length}
