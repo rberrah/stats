@@ -8,6 +8,9 @@ order: 12
 duration: "13 min"
 programItem: "A-2"
 tags: ["test statistique", "hypothèse nulle", "risque alpha", "degré de signification"]
+level: "beginner"
+sources: ["schwartz", "fisher-1925", "asa-pvalue", "altman-bland-nonsig"]
+reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Que suppose exactement l'hypothèse nulle H0 quand on compare un pourcentage observé à une valeur théorique p0 ?"
     options:

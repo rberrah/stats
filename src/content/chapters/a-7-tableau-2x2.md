@@ -8,6 +8,9 @@ order: 17
 duration: "13 min"
 programItem: "A-7"
 tags: ["tableau 2x2", "khi-deux", "correction de Yates", "comparaison de pourcentages"]
+level: "intermediate"
+sources: ["schwartz", "altman", "armitage-berry", "pearson-1900"]
+reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Le χ² d'un tableau 2 × 2 possède combien de degrés de liberté ?"
     options:

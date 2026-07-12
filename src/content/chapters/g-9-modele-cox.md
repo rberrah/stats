@@ -8,6 +8,9 @@ order: 69
 duration: "14 min"
 programItem: "G-9"
 tags: ["modèle de Cox", "hazard ratio", "risque instantané", "risques proportionnels", "ajustement"]
+level: "advanced"
+sources: ["cox-1972", "collett-survival", "suissa-immortal", "altman"]
+reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Un hazard ratio de 0,70 signifie que le groupe exposé a, à chaque instant :"
     options:

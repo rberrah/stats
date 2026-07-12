@@ -8,6 +8,9 @@ order: 70
 duration: "14 min"
 programItem: "G-10"
 tags: ["régression logistique", "odds ratio", "logit", "variable binaire", "ajustement"]
+level: "advanced"
+sources: ["hosmer-lemeshow", "altman", "rothman"]
+reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Pourquoi ne pas utiliser une régression linéaire ordinaire pour prédire une variable binaire (malade / sain) ?"
     options:

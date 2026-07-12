@@ -8,6 +8,9 @@ order: 1
 duration: "9 min"
 programItem: "F-1"
 tags: ["variabilité", "mesure", "échantillonnage", "incertitude"]
+level: "beginner"
+sources: ["schwartz", "altman", "ancelle"]
+reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Vous dosez deux fois de suite le même tube de sérum et trouvez 4,9 puis 5,1 mmol/L. À quelle source de variabilité attribuez-vous surtout cet écart ?"
     options:

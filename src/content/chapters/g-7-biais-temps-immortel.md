@@ -8,6 +8,9 @@ order: 67
 duration: "12 min"
 programItem: "G-7"
 tags: ["biais de temps immortel", "études observationnelles", "survie", "exposition dépendante du temps"]
+level: "advanced"
+sources: ["suissa-immortal", "rothman", "cox-1972"]
+reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Qu'appelle-t-on « temps immortel » dans une étude de survie ?"
     options:

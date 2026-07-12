@@ -85,9 +85,15 @@ function parseChapter(path, raw) {
     duration: data.duration ?? '',
     programItem: data.programItem ?? '',
     theme: data.theme ?? '',
+    level: data.level ?? '',
+    layer: data.layer ?? '',
     tags: data.tags ?? [],
     prerequisites: data.prerequisites ?? [],
     glossary: data.glossary ?? [],
+    // Schéma commun aux 3 sites : vérifiabilité
+    sources: data.sources ?? [],
+    reviewed_on: data.reviewed_on ? String(data.reviewed_on) : '',
+    status: data.status ?? '',
     quiz: data.quiz ?? [],
     steps
   };

@@ -8,6 +8,9 @@ order: 42
 duration: "12 min"
 programItem: "D-2"
 tags: ["Mann-Whitney", "Wilcoxon", "rangs", "deux groupes", "U", "test non paramétrique"]
+level: "intermediate"
+sources: ["mann-whitney-1947", "wilcoxon-1945", "altman", "schwartz"]
+reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Pour le test de Mann-Whitney, sur quel ensemble effectue-t-on le classement des observations ?"
     options:

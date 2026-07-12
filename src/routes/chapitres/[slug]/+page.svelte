@@ -7,6 +7,7 @@
   import Quiz from '$lib/components/ui/Quiz.svelte';
   import ExerciseBlock from '$lib/components/ui/ExerciseBlock.svelte';
   import MemoPanel from '$lib/components/ui/MemoPanel.svelte';
+  import ChapterFooter from '$lib/components/ui/ChapterFooter.svelte';
   import { exercisesForChapter } from '$lib/content/exercises';
   import { fade, fly } from 'svelte/transition';
   import { cubicOut } from 'svelte/easing';
@@ -162,6 +163,8 @@
           <ExerciseBlock items={chapterExercises} />
         </section>
       {/if}
+
+      <ChapterFooter {chapter} />
 
       <nav class="chap-nav">
         {#if prev}

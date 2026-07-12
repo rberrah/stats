@@ -8,6 +8,9 @@ order: 44
 duration: "12 min"
 programItem: "D-4"
 tags: ["Kruskal-Wallis", "K groupes", "ANOVA", "rangs", "H", "test non paramétrique"]
+level: "intermediate"
+sources: ["kruskal-wallis-1952", "mann-whitney-1947", "altman", "armitage-berry"]
+reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Le test de Kruskal-Wallis est l'équivalent non paramétrique de quel test paramétrique ?"
     options:

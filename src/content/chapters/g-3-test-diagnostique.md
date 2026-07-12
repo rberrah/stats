@@ -8,6 +8,9 @@ order: 63
 duration: "14 min"
 programItem: "G-3"
 tags: ["sensibilité", "spécificité", "valeur prédictive", "prévalence", "rapport de vraisemblance"]
+level: "intermediate"
+sources: ["deeks-altman-lr", "altman-bland-notes", "altman", "ancelle"]
+reviewed_on: "2026-07-09"
 quiz:
   - prompt: "La sensibilité d'un test est la probabilité que :"
     options:

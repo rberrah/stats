@@ -8,6 +8,9 @@ order: 45
 duration: "11 min"
 programItem: "D-5"
 tags: ["Spearman", "corrélation", "rangs", "liaison monotone", "Pearson"]
+level: "intermediate"
+sources: ["spearman-1904", "altman", "schwartz", "altman-bland-notes"]
+reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Quel type de liaison le coefficient de Spearman rₛ est-il capable de détecter ?"
     options:

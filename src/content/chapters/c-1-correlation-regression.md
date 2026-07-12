@@ -8,6 +8,9 @@ order: 31
 duration: "10 min"
 programItem: "C-1"
 tags: ["corrélation", "régression", "liaison", "quantitatif"]
+level: "beginner"
+sources: ["schwartz", "altman", "armitage-berry"]
+reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Vous voulez estimer la pression artérielle d'un patient à partir de son âge. De quel outil relève cette question ?"
     options:

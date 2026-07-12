@@ -8,6 +8,9 @@ order: 41
 duration: "10 min"
 programItem: "D-1"
 tags: ["non paramétrique", "rangs", "robustesse", "normalité", "ordinal"]
+level: "beginner"
+sources: ["schwartz", "altman", "wilcoxon-1945", "armitage-berry"]
+reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Dans quelle situation un test non paramétrique fondé sur les rangs est-il particulièrement indiqué ?"
     options:

@@ -8,6 +8,9 @@ order: 3
 duration: "10 min"
 programItem: "F-3"
 tags: ["hypothèse nulle", "test", "risque", "pari", "H0"]
+level: "beginner"
+sources: ["schwartz", "fisher-1925", "asa-pvalue", "altman-bland-nonsig"]
+reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Dans un test statistique, l'hypothèse nulle H0 énonce en général :"
     options:

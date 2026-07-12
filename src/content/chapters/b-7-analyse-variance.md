@@ -8,6 +8,9 @@ order: 27
 duration: "14 min"
 programItem: "B-7"
 tags: ["analyse de la variance", "ANOVA", "test F", "inflation alpha", "variance inter-intra"]
+level: "intermediate"
+sources: ["fisher-1925", "schwartz", "armitage-berry", "altman"]
+reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Pourquoi ne pas comparer 4 moyennes en faisant tous les tests t deux à deux ?"
     options:

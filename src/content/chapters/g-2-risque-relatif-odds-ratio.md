@@ -8,6 +8,9 @@ order: 62
 duration: "14 min"
 programItem: "G-2"
 tags: ["risque relatif", "odds ratio", "réduction du risque", "NNT", "tableau 2x2"]
+level: "intermediate"
+sources: ["laupacis-nnt", "rothman", "bouyer", "altman"]
+reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Un traitement fait passer le risque d'événement de 12 % à 8 %. La réduction relative du risque (RRR) est de :"
     options:

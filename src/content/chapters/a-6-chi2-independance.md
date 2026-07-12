@@ -8,6 +8,9 @@ order: 16
 duration: "14 min"
 programItem: "A-6"
 tags: ["khi-deux", "indépendance", "tableau de contingence", "effectifs attendus"]
+level: "intermediate"
+sources: ["pearson-1900", "schwartz", "altman", "armitage-berry"]
+reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Dans un tableau de contingence, l'effectif attendu d'une case sous l'hypothèse d'indépendance vaut :"
     options:

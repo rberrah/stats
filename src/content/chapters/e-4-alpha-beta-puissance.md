@@ -8,6 +8,9 @@ order: 54
 duration: "12 min"
 programItem: "E-4"
 tags: ["risque alpha", "risque beta", "puissance", "nombre de sujets", "taille d'échantillon"]
+level: "intermediate"
+sources: ["altman", "schwartz", "altman-bland-nonsig", "ioannidis-2005"]
+reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Le risque β (deuxième espèce) dépend de plusieurs facteurs. Lequel N'influence PAS β ?"
     options:

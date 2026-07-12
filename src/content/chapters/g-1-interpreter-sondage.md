@@ -8,6 +8,9 @@ order: 61
 duration: "12 min"
 programItem: "G-1"
 tags: ["sondage", "marge d'erreur", "intervalle de confiance", "taille d'échantillon", "biais de sélection"]
+level: "beginner"
+sources: ["schwartz", "altman", "ancelle", "sackett-bias"]
+reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Un sondage donne 52 % sur 1 000 personnes, « marge d'erreur ± 3 points ». Cela signifie que :"
     options:

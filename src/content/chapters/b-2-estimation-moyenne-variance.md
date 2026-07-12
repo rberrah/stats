@@ -8,6 +8,9 @@ order: 22
 duration: "12 min"
 programItem: "B-2"
 tags: ["estimation", "moyenne", "variance", "degrés de liberté", "biais"]
+level: "beginner"
+sources: ["schwartz", "armitage-berry", "altman"]
+reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Pourquoi divise-t-on la somme des carrés des écarts par (n−1) et non par n pour estimer la variance d'une population ?"
     options:
