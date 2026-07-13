@@ -2,7 +2,7 @@
   // @ts-nocheck
   // Bibliographie du site : le pool FERMÉ de références auquel chaque chapitre se rattache.
   // Chaque chapitre affiche SES sources en pied de page ; cette page les rassemble toutes.
-  import { referenceGroups, refIdentifier, citableRefIds } from '$lib/content/references';
+  import { referenceGroups, refIdentifier } from '$lib/content/references';
   import chapters from '$lib/content/loadChapters';
 
   const stable = referenceGroups.flatMap((g) => g.items).filter((r) => r.doi || r.pmid || r.isbn).length;
@@ -43,9 +43,8 @@
 </header>
 
 {#each referenceGroups as g}
-  <section class="grp" class:muted={g.id === 'liens'}>
+  <section class="grp">
     <h2>{g.title}</h2>
-    {#if g.note}<p class="gnote">{g.note}</p>{/if}
     <ul>
       {#each g.items as r}
         <li>
@@ -80,6 +79,4 @@
   .used { font-family: var(--font-mono); font-size: 9px; color: var(--accent-pk); background: color-mix(in srgb, var(--accent-pk) 12%, var(--bg-primary)); border-radius: 999px; padding: 1px 7px; }
   .id { font-family: var(--font-mono); font-size: 9px; color: var(--text-secondary); background: var(--bg-secondary); border-radius: 999px; padding: 1px 7px; }
   .meta { flex-basis: 100%; font-size: var(--text-sm); color: var(--text-muted); }
-  .gnote { max-width: 62ch; margin: calc(-1 * var(--space-2)) 0 var(--space-4); font-size: var(--text-sm); line-height: 1.5; color: var(--text-muted); border-left: 2px solid var(--border-strong); padding-left: var(--space-3); }
-  .muted a { font-weight: 500; color: var(--text-secondary); }
 </style>

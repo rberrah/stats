@@ -9,15 +9,14 @@
 // AUCUN lien de recherche : une recherche n'est ni stable, ni univoque, donc pas une citation.
 // Chaque DOI a été RÉSOLU contre Crossref et son titre confronté au titre attendu (2026-07).
 //
-// `citable: false` — LIENS UTILES, PAS DES SOURCES.
-//   Le site d'une institution ne soutient aucune affirmation : son contenu change et
-//   n'affirme rien de vérifiable. Ces entrées restent en bibliographie, mais un chapitre
-//   qui les cite dans `sources:` fait ÉCHOUER le smoke test.
+// La règle de rattachement est de PERTINENCE, pas de nature : une source doit répondre à
+// « d'où vient cette affirmation ? ». Une agence ou une institution est une source
+// légitime — encore faut-il que le document cité porte réellement ce que le chapitre dit.
 //
 // Les chapitres se rattachent au pool via `sources: [<id>, ...]` dans leur frontmatter.
-// Un id inconnu — ou non citable — fait ÉCHOUER le smoke test.
+// Un id inconnu fait ÉCHOUER le smoke test.
 
-/** @typedef {{id:string, kind:string, title:string, authors?:string, where?:string, doi?:string, pmid?:string, isbn?:string, url:string, citable?:boolean}} Reference */
+/** @typedef {{id:string, kind:string, title:string, authors?:string, where?:string, doi?:string, pmid?:string, isbn?:string, url:string}} Reference */
 
 export const referenceGroups = [
   {
@@ -105,12 +104,11 @@ export const referenceGroups = [
   },
   {
     id: 'liens',
-    title: 'Liens utiles (ne sont pas des sources)',
-    note: 'Le site d’une institution ne soutient aucune affirmation : son contenu change et n’affirme rien de vérifiable. Ces liens sont donnés pour aller plus loin — aucun chapitre ne s’en sert comme source.',
+    title: 'Institutions & ressources',
     items: [
-      { id: 'has', kind: 'site', citable: false, title: 'HAS — Haute Autorité de Santé (guides méthodologiques)', url: 'https://www.has-sante.fr' },
-      { id: 'spf', kind: 'site', citable: false, title: 'Santé publique France — méthodes et surveillance épidémiologique', url: 'https://www.santepubliquefrance.fr' },
-      { id: 'equator', kind: 'site', citable: false, title: 'EQUATOR Network — guides de publication (STROBE, CONSORT, STARD…)', url: 'https://www.equator-network.org' }
+      { id: 'has', kind: 'site', title: 'HAS — Haute Autorité de Santé (guides méthodologiques)', url: 'https://www.has-sante.fr' },
+      { id: 'spf', kind: 'site', title: 'Santé publique France — méthodes et surveillance épidémiologique', url: 'https://www.santepubliquefrance.fr' },
+      { id: 'equator', kind: 'site', title: 'EQUATOR Network — guides de publication (STROBE, CONSORT, STARD…)', url: 'https://www.equator-network.org' }
     ]
   }
 ];
@@ -124,9 +122,6 @@ export const refById = (() => {
 
 /** Tous les identifiants du pool. */
 export const allRefIds = Object.keys(refById);
-
-/** Les identifiants réellement CITABLES : un lien utile n'est pas une source. */
-export const citableRefIds = allRefIds.filter((id) => refById[id].citable !== false);
 
 /** Étiquette courte de l'identifiant, à afficher à côté de la source. */
 export function refIdentifier(r) {
