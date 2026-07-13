@@ -9,7 +9,7 @@ duration: "11 min"
 programItem: "D-3"
 tags: ["Wilcoxon apparié", "séries appariées", "avant-après", "rangs signés", "T"]
 level: "intermediate"
-sources: ["wilcoxon-1945", "altman", "schwartz", "armitage-berry"]
+sources: ["wilcoxon-1945", "hodges-lehmann-1956", "altman"]
 reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Dans le test T de Wilcoxon pour séries appariées, sur quoi porte le classement en rangs ?"

@@ -9,7 +9,7 @@ duration: "11 min"
 programItem: "B-6"
 tags: ["test F", "variances", "rapport de variances", "homoscédasticité"]
 level: "intermediate"
-sources: ["fisher-1925", "armitage-berry", "schwartz"]
+sources: ["fisher-1925", "brown-forsythe-1974", "welch-1947", "armitage-berry"]
 reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Comment construit-on la statistique F pour comparer deux variances ?"

@@ -9,7 +9,7 @@ duration: "13 min"
 programItem: "B-3"
 tags: ["intervalle de confiance", "moyenne", "précision", "nombre de sujets"]
 level: "intermediate"
-sources: ["student-1908", "armitage-berry", "schwartz"]
+sources: ["student-1908", "cochran-sampling", "armitage-berry"]
 reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Un intervalle de confiance à 95 % d'une moyenne vaut [4,3 ; 4,9] mmol/L. Interprétation correcte ?"

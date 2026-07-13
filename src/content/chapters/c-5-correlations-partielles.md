@@ -9,7 +9,7 @@ duration: "12 min"
 programItem: "C-5"
 tags: ["corrélation partielle", "facteur de confusion", "régression multiple", "causalité"]
 level: "advanced"
-sources: ["rothman", "hill-criteria", "schwartz", "altman"]
+sources: ["rothman", "hill-criteria", "armitage-berry"]
 reviewed_on: "2026-07-09"
 quiz:
   - prompt: "On observe une corrélation r = 0,50 entre café et risque cardiovasculaire. Après avoir tenu compte du tabac, la corrélation partielle chute à 0,02. Que conclure ?"

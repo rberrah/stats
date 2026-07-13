@@ -9,7 +9,7 @@ duration: "10 min"
 programItem: "F-2"
 tags: ["population", "échantillon", "paramètre", "estimation", "urne"]
 level: "beginner"
-sources: ["schwartz", "sackett-bias", "bouyer"]
+sources: ["schwartz", "cochran-sampling", "sackett-bias"]
 reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Dans le vocabulaire statistique, la vraie proportion de porteurs d'un gène dans toute la population française est :"

@@ -9,7 +9,7 @@ duration: "13 min"
 programItem: "A-8"
 tags: ["test de Fisher", "petits échantillons", "probabilité exacte", "loi hypergéométrique"]
 level: "intermediate"
-sources: ["fisher-1925", "schwartz", "armitage-berry", "altman-bland-nonsig"]
+sources: ["fisher-1935-exact", "altman-bland-nonsig", "armitage-berry"]
 reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Quand préfère-t-on le test exact de Fisher au χ² sur un tableau 2 × 2 ?"

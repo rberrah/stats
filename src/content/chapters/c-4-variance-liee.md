@@ -9,7 +9,7 @@ duration: "11 min"
 programItem: "C-4"
 tags: ["rho", "variance expliquée", "variance résiduelle", "décomposition", "r carré"]
 level: "intermediate"
-sources: ["schwartz", "armitage-berry", "altman"]
+sources: ["fisher-1922", "armitage-berry", "schwartz"]
 reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Dans une régression, la variance totale de y se décompose en :"

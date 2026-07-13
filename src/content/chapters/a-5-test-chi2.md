@@ -9,7 +9,7 @@ duration: "13 min"
 programItem: "A-5"
 tags: ["khi-deux", "test d'ajustement", "effectifs attendus", "degrés de liberté"]
 level: "beginner"
-sources: ["pearson-1900", "schwartz", "armitage-berry"]
+sources: ["pearson-1900", "fisher-1922", "armitage-berry"]
 reviewed_on: "2026-07-09"
 quiz:
   - prompt: "La statistique du χ² d'ajustement se calcule par :"

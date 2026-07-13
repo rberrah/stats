@@ -9,7 +9,7 @@ duration: "11 min"
 programItem: "F-4"
 tags: ["risque alpha", "risque beta", "puissance", "effectif", "erreur"]
 level: "beginner"
-sources: ["altman-bland-nonsig", "sterne-smith", "altman"]
+sources: ["neyman-pearson-1933", "altman-bland-nonsig", "sterne-smith", "altman"]
 reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Un traitement est en réalité efficace, mais le test conclut « pas de différence significative ». De quelle erreur s'agit-il ?"

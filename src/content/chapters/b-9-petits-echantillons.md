@@ -9,7 +9,7 @@ duration: "12 min"
 programItem: "B-9"
 tags: ["petits échantillons", "normalité", "loi de Student", "conditions d'application"]
 level: "intermediate"
-sources: ["student-1908", "altman-bland-nonsig", "altman", "schwartz"]
+sources: ["student-1908", "altman-bland-nonsig", "bland-altman-transform", "altman"]
 reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Pourquoi la normalité des données est-elle plus critique sur un petit échantillon que sur un grand ?"

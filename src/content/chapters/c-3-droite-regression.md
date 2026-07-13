@@ -9,7 +9,7 @@ duration: "12 min"
 programItem: "C-3"
 tags: ["régression", "moindres carrés", "pente", "prédiction", "extrapolation"]
 level: "intermediate"
-sources: ["schwartz", "altman", "armitage-berry"]
+sources: ["galton-1886", "armitage-berry", "schwartz"]
 reviewed_on: "2026-07-09"
 quiz:
   - prompt: "La droite de régression de la PAS sur l'âge est y = 0,80 x + 97 (x en années, y en mmHg). Comment interpréter la pente 0,80 ?"

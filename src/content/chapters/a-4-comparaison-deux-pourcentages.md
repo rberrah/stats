@@ -9,7 +9,7 @@ duration: "13 min"
 programItem: "A-4"
 tags: ["comparaison de pourcentages", "écart-réduit", "pourcentage commun", "essai thérapeutique"]
 level: "beginner"
-sources: ["schwartz", "altman", "asa-pvalue"]
+sources: ["pearson-1900", "altman", "asa-pvalue"]
 reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Sous H0 (les deux groupes ont la même proportion), quelle valeur utilise-t-on pour calculer l'écart-type de la différence ?"
