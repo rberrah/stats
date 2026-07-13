@@ -16,6 +16,9 @@
 
   const total = referenceGroups.reduce((n, g) => n + g.items.length, 0);
   const sourced = chapters.filter((c) => (c.sources ?? []).length).length;
+  // Annoncer « aucune référence décorative » puis en laisser un tiers sans usage serait
+  // exactement le travers qu'on veut éviter. On affiche donc le compte réel.
+  const cited = Object.keys(usage).length;
 
   const KIND = {
     book: 'Ouvrage',
@@ -30,9 +33,11 @@
   <h1>Références</h1>
   <p class="lede">
     Les <strong>{total} sources</strong> sur lesquelles s'appuie ce cours. Ce n'est pas une liste
-    décorative : chaque chapitre <strong>cite les siennes</strong> dans son pied de page, et
-    <strong>{sourced}/{chapters.length}</strong> chapitres sont sourcés. Le nombre entre parenthèses
-    indique combien de chapitres s'appuient sur la référence.
+    décorative : chaque chapitre <strong>cite les siennes</strong> en pied de page, et
+    <strong>{sourced}/{chapters.length}</strong> chapitres sont sourcés. <strong>{cited}</strong> de
+    ces {total} références sont effectivement citées par au moins un chapitre ; les
+    {total - cited} autres sont des ressources d'institution, données pour aller plus loin. La
+    mention à droite de chaque entrée indique combien de chapitres s'y appuient.
   </p>
   <p class="note">
     Ce pool est <strong>fermé</strong> : un chapitre ne peut citer qu'une référence de cette liste —

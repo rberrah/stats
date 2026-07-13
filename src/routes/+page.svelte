@@ -22,6 +22,17 @@
   <p class="stat">{total} chapitre{total > 1 ? 's' : ''} · {tracks.length} parties, du pari statistique à l'épidémiologie clinique</p>
 </section>
 
+<!-- La question que l'on se pose 9 fois sur 10 : elle mérite l'accueil, pas un chapitre en partie E. -->
+<a class="assistant" href={`${base}/resume`}>
+  <span class="q">Quel test dois-je utiliser&nbsp;?</span>
+  <p>
+    Répondez à trois questions — ce que vous cherchez, la nature de vos variables, vos groupes —
+    et l'arbre de décision vous donne le test à faire, ses conditions d'application, et le
+    chapitre qui l'explique.
+  </p>
+  <span class="go">Ouvrir l'arbre de décision →</span>
+</a>
+
 <section class="grid">
   {#each tracks as t}
     {@const list = grouped[t.id] ?? []}
@@ -43,6 +54,13 @@
 </section>
 
 <style>
+  .assistant { display: block; max-width: 760px; margin: var(--space-10) 0; padding: var(--space-6) var(--space-7); text-decoration: none; color: inherit; border: 1px solid var(--accent-pk); border-radius: var(--radius-lg, 12px); background: color-mix(in srgb, var(--accent-pk) 6%, var(--bg-primary)); transition: transform 0.2s ease, box-shadow 0.2s ease; }
+  .assistant:hover { transform: translateY(-2px); box-shadow: 0 6px 24px color-mix(in srgb, var(--accent-pk) 18%, transparent); }
+  .assistant .q { display: block; font-size: var(--text-2xl); font-weight: 700; color: var(--text-primary); margin-bottom: var(--space-2); }
+  .assistant p { margin: 0 0 var(--space-4); color: var(--text-secondary); line-height: 1.6; max-width: 60ch; }
+  .assistant .go { font-family: var(--font-mono); font-size: var(--text-sm); font-weight: 700; color: var(--accent-pk); }
+  @media (max-width: 640px) { .assistant { padding: var(--space-5); } .assistant .q { font-size: var(--text-xl); } }
+
   .hero { max-width: 780px; margin: var(--space-8) 0 var(--space-16); }
   h1 { font-size: var(--text-4xl); margin: var(--space-3) 0; line-height: 1.05; }
   h1 span { color: var(--accent-pk); }
