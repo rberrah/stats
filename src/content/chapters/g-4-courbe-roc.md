@@ -9,7 +9,7 @@ duration: "13 min"
 programItem: "G-4"
 tags: ["courbe ROC", "AUC", "seuil", "sensibilité", "spécificité"]
 level: "intermediate"
-sources: ["hanley-mcneil-1982", "deeks-altman-lr", "altman"]
+sources: ["hanley-mcneil-1982", "altman", "ancelle"]
 reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Sur une échelle continue, abaisser le seuil de positivité a pour effet de :"

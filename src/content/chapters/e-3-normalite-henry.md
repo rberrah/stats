@@ -9,7 +9,7 @@ duration: "11 min"
 programItem: "E-3"
 tags: ["normalité", "droite de Henry", "QQ-plot", "distribution", "test paramétrique"]
 level: "intermediate"
-sources: ["schwartz", "altman", "armitage-berry", "altman-bland-notes"]
+sources: ["shapiro-wilk-1965", "bland-altman-normal", "bland-altman-transform", "altman"]
 reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Sur une droite de Henry, les points s'alignent bien sur la droite. Qu'en concluez-vous ?"

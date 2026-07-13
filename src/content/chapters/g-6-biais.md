@@ -9,7 +9,7 @@ duration: "13 min"
 programItem: "G-6"
 tags: ["biais", "confusion", "sélection", "classement", "validité interne"]
 level: "intermediate"
-sources: ["sackett-bias", "rothman", "bouyer", "hill-criteria"]
+sources: ["sackett-bias", "rothman", "bouyer"]
 reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Quelle est la différence fondamentale entre un biais et un manque de puissance ?"

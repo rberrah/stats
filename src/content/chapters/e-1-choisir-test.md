@@ -9,7 +9,7 @@ duration: "12 min"
 programItem: "E-1"
 tags: ["choix du test", "arbre de décision", "test paramétrique", "test non paramétrique", "méthode"]
 level: "beginner"
-sources: ["schwartz", "altman", "mann-whitney-1947", "kruskal-wallis-1952"]
+sources: ["altman", "student-1908", "pearson-1900", "mann-whitney-1947"]
 reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Vous comparez la pression artérielle moyenne (quantitative) entre trois groupes de traitement indépendants, avec des effectifs suffisants et des distributions à peu près normales. Quel test choisir ?"

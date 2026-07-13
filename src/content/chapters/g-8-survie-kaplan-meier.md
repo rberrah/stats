@@ -9,7 +9,7 @@ duration: "14 min"
 programItem: "G-8"
 tags: ["survie", "Kaplan-Meier", "censure", "log-rank", "médiane de survie"]
 level: "intermediate"
-sources: ["kaplan-meier-1958", "mantel-1966", "collett-survival", "altman"]
+sources: ["kaplan-meier-1958", "mantel-1966", "collett-survival"]
 reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Qu'appelle-t-on « censure » en analyse de survie ?"

@@ -9,7 +9,7 @@ duration: "12 min"
 programItem: "C-2"
 tags: ["coefficient de corrélation", "r", "r carré", "test", "linéarité"]
 level: "intermediate"
-sources: ["schwartz", "altman", "armitage-berry", "altman-bland-notes"]
+sources: ["schwartz", "altman", "armitage-berry", "asa-pvalue"]
 reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Une étude trouve r = 0,70 entre deux dosages. Quelle part de la variance de l'un est « liée » à l'autre ?"

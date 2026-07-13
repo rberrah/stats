@@ -9,7 +9,7 @@ duration: "11 min"
 programItem: "E-2"
 tags: ["variable qualitative", "variable quantitative", "aléatoire", "contrôlé", "corrélation", "régression"]
 level: "beginner"
-sources: ["schwartz", "altman", "armitage-berry", "spearman-1904"]
+sources: ["schwartz", "spearman-1904", "altman", "hill-criteria"]
 reviewed_on: "2026-07-09"
 quiz:
   - prompt: "On code le groupe sanguin en 1 (O), 2 (A), 3 (B), 4 (AB). Peut-on calculer une « moyenne » de groupe sanguin ?"

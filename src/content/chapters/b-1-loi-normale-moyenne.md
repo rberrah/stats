@@ -9,7 +9,7 @@ duration: "12 min"
 programItem: "B-1"
 tags: ["loi normale", "moyenne", "erreur-standard", "théorème central limite"]
 level: "beginner"
-sources: ["schwartz", "altman", "armitage-berry"]
+sources: ["schwartz", "armitage-berry", "bland-altman-normal"]
 reviewed_on: "2026-07-09"
 quiz:
   - prompt: "La glycémie à jeun d'une population a un écart-type de 0,12 g/L. Quelle est l'erreur-standard de la moyenne pour un échantillon de 36 sujets ?"

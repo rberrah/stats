@@ -88,11 +88,19 @@ const badGloss = chapters.flatMap((c) => (c.data.glossary ?? []).filter((t) => !
 check(badGloss.length === 0, `termes de glossaire référencés tous définis`);
 
 // 10b. SOURCES : pool fermé — tout identifiant cité doit exister dans references.js
-const { allRefIds } = await import(url.pathToFileURL(path.join(root, 'src/lib/content/references.js')));
+const { allRefIds, citableRefIds } = await import(url.pathToFileURL(path.join(root, 'src/lib/content/references.js')));
 const refSet = new Set(allRefIds);
+// Un LIEN n'est pas une SOURCE : le site d'une institution ne soutient aucune affirmation.
+const citable = new Set(citableRefIds);
 const badSrc = [];
-for (const c of chapters) for (const s of (c.data.sources ?? [])) if (!refSet.has(s)) badSrc.push(`${c.data.slug}→${s}`);
-check(badSrc.length === 0, `sources : tous les identifiants résolvent (pool de ${refSet.size} références)` + (badSrc.length ? ` — INCONNUS : ${badSrc.slice(0, 6).join(', ')}` : ''));
+const notCitable = [];
+for (const c of chapters)
+  for (const s of c.data.sources ?? []) {
+    if (!refSet.has(s)) badSrc.push(`${c.data.slug}→${s}`);
+    else if (!citable.has(s)) notCitable.push(`${c.data.slug}→${s}`);
+  }
+check(badSrc.length === 0, `sources : tous les identifiants résolvent (pool de ${refSet.size} références, ${citable.size} citables)` + (badSrc.length ? ` — INCONNUS : ${badSrc.slice(0, 6).join(', ')}` : ''));
+check(notCitable.length === 0, `sources : aucun chapitre ne cite un simple LIEN pour étayer une affirmation` + (notCitable.length ? ` — NON CITABLES : ${notCitable.slice(0, 6).join(', ')}` : ''));
 const nSourced = chapters.filter((c) => (c.data.sources ?? []).length).length;
 const badStatus = chapters.filter((c) => c.data.status && !['brouillon', 'relu', 'valide'].includes(c.data.status));
 check(badStatus.length === 0, `statuts de relecture valides`);

@@ -2,8 +2,10 @@
   // @ts-nocheck
   // Bibliographie du site : le pool FERMÉ de références auquel chaque chapitre se rattache.
   // Chaque chapitre affiche SES sources en pied de page ; cette page les rassemble toutes.
-  import { referenceGroups } from '$lib/content/references';
+  import { referenceGroups, refIdentifier, citableRefIds } from '$lib/content/references';
   import chapters from '$lib/content/loadChapters';
+
+  const stable = referenceGroups.flatMap((g) => g.items).filter((r) => r.doi || r.pmid || r.isbn).length;
 
   // Combien de chapitres citent chaque référence ? (rend la bibliographie vivante)
   const usage = (() => {
@@ -35,18 +37,21 @@
   <p class="note">
     Ce pool est <strong>fermé</strong> : un chapitre ne peut citer qu'une référence de cette liste —
     un identifiant inconnu fait échouer la vérification automatique du site. C'est ce qui garantit
-    qu'aucune source n'est inventée.
+    qu'aucune source n'est inventée. <strong>{stable} des {total}</strong> portent un DOI, un PMID ou
+    un ISBN : elles résolvent vers un document unique, et pour toujours.
   </p>
 </header>
 
 {#each referenceGroups as g}
-  <section class="grp">
+  <section class="grp" class:muted={g.id === 'liens'}>
     <h2>{g.title}</h2>
+    {#if g.note}<p class="gnote">{g.note}</p>{/if}
     <ul>
       {#each g.items as r}
         <li>
           <a href={r.url} target="_blank" rel="noopener noreferrer">{r.title}</a>
           <span class="kind">{KIND[r.kind] ?? r.kind}</span>
+          {#if refIdentifier(r)}<span class="id">{refIdentifier(r)}</span>{/if}
           {#if usage[r.id]}<span class="used">{usage[r.id]} chapitre{usage[r.id] > 1 ? 's' : ''}</span>{/if}
           <span class="meta">
             {#if r.authors}{r.authors}{/if}{#if r.where} — {r.where}{/if}
@@ -73,5 +78,8 @@
   a:hover { color: var(--accent-pk); border-color: var(--accent-pk); }
   .kind { font-family: var(--font-mono); font-size: 9px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-muted); border: 1px solid var(--border-subtle); border-radius: 999px; padding: 1px 7px; }
   .used { font-family: var(--font-mono); font-size: 9px; color: var(--accent-pk); background: color-mix(in srgb, var(--accent-pk) 12%, var(--bg-primary)); border-radius: 999px; padding: 1px 7px; }
+  .id { font-family: var(--font-mono); font-size: 9px; color: var(--text-secondary); background: var(--bg-secondary); border-radius: 999px; padding: 1px 7px; }
   .meta { flex-basis: 100%; font-size: var(--text-sm); color: var(--text-muted); }
+  .gnote { max-width: 62ch; margin: calc(-1 * var(--space-2)) 0 var(--space-4); font-size: var(--text-sm); line-height: 1.5; color: var(--text-muted); border-left: 2px solid var(--border-strong); padding-left: var(--space-3); }
+  .muted a { font-weight: 500; color: var(--text-secondary); }
 </style>

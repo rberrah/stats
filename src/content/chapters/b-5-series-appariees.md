@@ -9,7 +9,7 @@ duration: "12 min"
 programItem: "B-5"
 tags: ["séries appariées", "test t apparié", "méthode des couples", "avant-après"]
 level: "intermediate"
-sources: ["student-1908", "schwartz", "altman", "armitage-berry"]
+sources: ["student-1908", "armitage-berry", "schwartz"]
 reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Quel est l'avantage décisif d'un plan apparié (avant/après chez les mêmes sujets) par rapport à deux groupes indépendants ?"

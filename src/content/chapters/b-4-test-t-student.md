@@ -9,7 +9,7 @@ duration: "14 min"
 programItem: "B-4"
 tags: ["test t", "Student", "comparaison de moyennes", "degrés de liberté"]
 level: "beginner"
-sources: ["student-1908", "schwartz", "altman", "armitage-berry"]
+sources: ["student-1908", "armitage-berry", "schwartz"]
 reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Dans le test t de comparaison de deux moyennes, que représente le dénominateur s_d ?"

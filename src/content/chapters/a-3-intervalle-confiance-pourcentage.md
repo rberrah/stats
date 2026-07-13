@@ -9,7 +9,7 @@ duration: "12 min"
 programItem: "A-3"
 tags: ["intervalle de confiance", "précision", "nombre de sujets", "estimation"]
 level: "beginner"
-sources: ["schwartz", "altman", "altman-bland-notes"]
+sources: ["schwartz", "altman", "sterne-smith"]
 reviewed_on: "2026-07-09"
 quiz:
   - prompt: "L'intervalle de confiance à 95 % d'un pourcentage f observé sur n sujets est environ :"

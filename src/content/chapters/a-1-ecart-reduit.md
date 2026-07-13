@@ -9,7 +9,7 @@ duration: "12 min"
 programItem: "A-1"
 tags: ["pourcentage", "écart-réduit", "fluctuation d'échantillonnage", "loi normale"]
 level: "beginner"
-sources: ["schwartz", "altman", "armitage-berry"]
+sources: ["schwartz", "armitage-berry", "fisher-1925"]
 reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Pour une proportion vraie p et un échantillon de taille n, l'écart-type de la fréquence observée f vaut :"

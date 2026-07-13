@@ -9,7 +9,7 @@ duration: "13 min"
 programItem: "B-8"
 tags: ["plans d'expérience", "facteurs", "interaction", "plan factoriel"]
 level: "advanced"
-sources: ["fisher-1925", "armitage-berry", "schwartz", "consort"]
+sources: ["fisher-1925", "armitage-berry", "schwartz"]
 reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Qu'est-ce qu'une interaction entre deux facteurs ?"

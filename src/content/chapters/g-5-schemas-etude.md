@@ -9,7 +9,7 @@ duration: "14 min"
 programItem: "G-5"
 tags: ["cohorte", "cas-témoins", "essai randomisé", "facteur de confusion", "niveaux de preuve"]
 level: "intermediate"
-sources: ["rothman", "bouyer", "strobe", "consort"]
+sources: ["rothman", "bouyer", "hill-criteria", "consort"]
 reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Dans une étude cas-témoins, on part :"
