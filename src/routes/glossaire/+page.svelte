@@ -1,4 +1,5 @@
 <script>
+  import { onMount } from 'svelte';
   import { page } from '$app/stores';
   import { browser } from '$app/environment';
   import { glossary } from '$lib/content/glossary';
@@ -7,7 +8,12 @@
   // Pré-remplit depuis ?q= (liens « Rappels » des chapitres). Lecture côté client
   // uniquement : searchParams est interdit pendant le prérendu.
   $: initial = browser ? ($page.url.searchParams.get('q') ?? '') : '';
-  $: if (initial && !query) query = initial;
+  // Pre-remplissage ONE-SHOT. En instruction reactive, elle dependait de `query` : des que
+  // l utilisateur vidait le champ, elle le re-remplissait — champ impossible a effacer.
+  onMount(() => {
+    const q = $page.url.searchParams.get('q') ?? '';
+    if (q) query = q;
+  });
 
   $: filtered = glossary
     .filter((g) => {

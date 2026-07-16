@@ -205,7 +205,7 @@
 {/if}
 
 <style>
-  .progress { position: sticky; top: 56px; z-index: 40; height: 3px; background: var(--border-subtle); margin: 0 0 var(--space-6); }
+  .progress { position: sticky; top: var(--header-h); z-index: 39; height: 3px; background: var(--border-subtle); margin: 0 0 var(--space-6); }
   .progress .bar { height: 100%; width: calc(var(--p) * 100%); background: var(--accent-pk); transition: width 0.1s linear; }
   .chap-head { max-width: 720px; margin-bottom: var(--space-8); }
   .back { font-family: var(--font-mono); font-size: var(--text-sm); text-decoration: none; color: var(--text-secondary); }

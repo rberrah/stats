@@ -48,6 +48,9 @@
 
   --radius: 8px;
   --maxw: 1280px;
+  /* Hauteur du header collant : tout ce qui colle EN DESSOUS s y refere. Un top:56px code
+     en dur passait sous un header de 59px et la barre de progression restait invisible. */
+  --header-h: 59px;
 }
 
 * { box-sizing: border-box; }

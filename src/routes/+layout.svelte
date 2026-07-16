@@ -70,6 +70,7 @@
   header {
     display: flex; align-items: center; justify-content: space-between; gap: var(--space-4);
     padding: var(--space-3) var(--space-6);
+    min-height: var(--header-h);
     position: sticky; top: 0; z-index: 50;
     background: rgba(247, 249, 249, 0.85);
     backdrop-filter: blur(14px);
