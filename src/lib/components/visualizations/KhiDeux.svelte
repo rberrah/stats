@@ -10,12 +10,17 @@
   const seuil = 7.81; // χ² au risque 5 %, 3 ddl
 
   $: expected = Array(K).fill(N / K);
+  // Effectifs observés ENTIERS, dont la somme fait exactement N : sinon la valeur affichée
+  // (arrondie) et le χ² (calculé sur des réels) divergent, et l'étudiant qui refait le calcul
+  // à la main depuis les barres tombe sur un autre chiffre que la pastille.
   $: observed = (() => {
-    // profil de déviation symétrique, renormalisé pour sommer à N
     const w = [1 + ecart, 1 + ecart / 3, 1 - ecart / 3, 1 - ecart];
     const raw = w.map((x) => (N / K) * x);
     const s = raw.reduce((a, b) => a + b, 0);
-    return raw.map((x) => (x * N) / s);
+    const scaled = raw.map((x) => (x * N) / s);
+    const rounded = scaled.slice(0, K - 1).map((x) => Math.round(x));
+    rounded.push(N - rounded.reduce((a, b) => a + b, 0)); // dernière catégorie par différence → Σ = N
+    return rounded;
   })();
   $: chi2 = observed.reduce((s, o, i) => s + (o - expected[i]) ** 2 / expected[i], 0);
   $: signif = chi2 > seuil;
@@ -41,7 +46,7 @@
         <rect x={cx - bw - gap/2} y={yOf(expected[i])} width={bw} height={iH - yOf(expected[i])} class="exp" />
         <rect x={cx + gap/2} y={yOf(observed[i])} width={bw} height={iH - yOf(observed[i])} class="obs" class:sig={signif} />
         <text x={cx} y={iH + 16} class="clbl">{c}</text>
-        <text x={cx} y={iH + 30} class="onum">{observed[i].toFixed(0)}</text>
+        <text x={cx} y={iH + 30} class="onum">{observed[i]}</text>
       {/each}
     </g>
   </svg>

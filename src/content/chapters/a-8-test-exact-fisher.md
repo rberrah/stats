@@ -51,7 +51,7 @@ Le test exact de Fisher raisonne « à **marges fixées** ». On considère comm
 
 > Parmi toutes les façons de répartir 7 guérisons et 5 échecs dans ce tableau **sans changer les marges**, quelle est la probabilité de tomber sur une répartition aussi déséquilibrée que celle observée ?
 
-Le tableau est entièrement déterminé par une seule case (1 degré de liberté). Faire varier la case « A / guéris » de 2 à 6 engendre **toutes** les tables possibles. Sous $H_0$ (les deux traitements se valent), chacune a une probabilité que l'on sait calculer exactement.
+Le tableau est entièrement déterminé par une seule case (1 degré de liberté). Faire varier la case « A / guéris » de 1 à 6 engendre **toutes** les tables possibles — la borne vient des marges : une case varie de $\max(0,\ \text{total ligne} + \text{total colonne} - N)$ à $\min(\text{total ligne},\ \text{total colonne})$, ici de $\max(0, 6+7-12)=1$ à $\min(6,7)=6$. Sous $H_0$ (les deux traitements se valent), chacune a une probabilité que l'on sait calculer exactement.
 <!-- /step -->
 
 <!-- step:title="La probabilité d'un tableau" -->
@@ -80,17 +80,19 @@ $$P = \dfrac{6!\;6!\;7!\;5!}{12!\;6!\;0!\;1!\;5!} \approx 0{,}008$$
 
 Le degré de signification **unilatéral** additionne les deux :
 
-$$p = P_{\text{obs}} + P_{\text{extrême}} \approx 0{,}114 + 0{,}008 = 0{,}122$$
+$$p_{\text{unil.}} = P_{\text{obs}} + P_{\text{extrême}} \approx 0{,}114 + 0{,}008 = 0{,}122$$
+
+Comme le reste du cours raisonne en **bilatéral** (on n'avait pas fait de pari sur le sens avant l'expérience), c'est le $p$ bilatéral qu'on compare au seuil : en sommant aussi les tables également extrêmes de l'autre côté, il vaut ici $p_{\text{bil.}} \approx 0{,}24$. On garde donc **0,24** pour la décision.
 
 :::key
-Le test exact de Fisher calcule la probabilité **exacte** de chaque tableau à marges fixées, puis somme celles du tableau observé et de tous les tableaux **au moins aussi extrêmes**. Aucune approximation, aucune condition d'effectif.
+Le test exact de Fisher calcule la probabilité **exacte** de chaque tableau à marges fixées, puis somme celles du tableau observé et de tous les tableaux **au moins aussi extrêmes**. Aucune approximation, aucune condition d'effectif. Comparez toujours le $p$ au seuil correspondant à l'hypothèse posée : bilatéral avec 0,05, unilatéral avec 0,025.
 :::
 <!-- /step -->
 
 <!-- step:title="La leçon des petits nombres" -->
-Malgré des taux de 83 % contre 33 %, on obtient $p \approx 0{,}12 > 0{,}05$ : la différence n'est **pas significative**.
+Malgré des taux de 83 % contre 33 %, on obtient $p \approx 0{,}24 > 0{,}05$ : la différence n'est **pas significative**.
 
-C'est déstabilisant, mais parfaitement logique. Avec seulement 6 patients par groupe, même une différence aussi apparente peut se produire par hasard plus d'une fois sur dix. Le test exact protège contre la conclusion hâtive que le χ², invalide ici, aurait laissée passer.
+C'est déstabilisant, mais parfaitement logique. Avec seulement 6 patients par groupe, même une différence aussi apparente peut se produire par hasard près d'une fois sur quatre. Ici le χ² (non corrigé) aurait donné $3{,}09$, donc la **même** conclusion — mais cette valeur n'a aucune garantie : l'effectif attendu de 2,5 invalide l'approximation. Seul le test exact fournit un $p$ légitime.
 
 :::pitfall
 Ne lisez jamais un pourcentage impressionnant sans regarder l'effectif derrière. « 83 % de guérison » sur 6 patients ne pèse pas lourd : l'intervalle de confiance est immense et le test reste muet. Un grand pourcentage sur un petit échantillon est une promesse, pas une preuve.

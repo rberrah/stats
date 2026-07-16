@@ -21,7 +21,7 @@
   --bg-tertiary: #ffffff;
   --text-primary: #16201f;
   --text-secondary: #45514f;
-  --text-muted: #78827f;
+  --text-muted: #646d6b;   /* 5,04:1 — était #78827f à 3,75:1, sous le seuil AA */
   --accent-pk: #4f46b8;   /* primaire — indigo */
   --accent-pd: #7e4fb0;   /* secondaire — violet */
   --accent-ai: #3f6fb0;   /* tertiaire — bleu */
@@ -33,7 +33,7 @@
   --quiz-success-text: #14532d;
   --quiz-error-bg: #fbe6e3;
   --quiz-error-text: #6c1e16;
-  --focus-ring: rgba(31, 122, 109, 0.45);
+  --focus-ring: #4f46b8;   /* opaque : un anneau a 45%% se lisait mal sur fond clair */
 
   --space-1: 0.25rem;
   --space-2: 0.5rem;
@@ -53,6 +53,17 @@
 * { box-sizing: border-box; }
 
 html { scroll-behavior: smooth; }
+
+/* Une animation peut declencher un malaise vestibulaire : respecter ce reglage est une
+   condition d ACCES, pas un confort. */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
 
 body {
   margin: 0;
@@ -137,6 +148,8 @@ input[type='range']::-webkit-slider-thumb {
   transition: transform 0.1s ease;
 }
 input[type='range']::-webkit-slider-thumb:hover { transform: scale(1.2); }
+input[type='range']:focus-visible::-webkit-slider-thumb { box-shadow: 0 0 0 3px var(--focus-ring); }
+input[type='range']:focus-visible::-moz-range-thumb { box-shadow: 0 0 0 3px var(--focus-ring); }
 input[type='range']::-moz-range-thumb {
   width: 16px;
   height: 16px;
@@ -159,3 +172,8 @@ input[type='range']::-moz-range-thumb {
   font-weight: 600;
 }
 .muted { color: var(--text-muted); }
+
+
+/* Lien d evitement : cache jusqu au focus, permet de sauter la navigation au clavier. */
+.skip-link { position:absolute; left:8px; top:-60px; z-index:1000; padding:var(--space-3) var(--space-4); background:var(--text-primary); color:var(--bg-primary); border-radius:var(--radius); font-weight:600; text-decoration:none; transition:top 0.15s ease; }
+.skip-link:focus { top:8px; }

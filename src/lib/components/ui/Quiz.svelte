@@ -5,6 +5,19 @@
   /** @type {Record<number, number>} */
   let answers = {};
 
+  // Mélange DÉTERMINISTE des options : la bonne réponse était presque toujours en position 0.
+  // Permutation dérivée de l'énoncé (stable, SSR-safe) ; `answers` reste en indices d'origine.
+  function shuffleOrder(prompt, n) {
+    let h = 2166136261;
+    for (let k = 0; k < prompt.length; k++) { h ^= prompt.charCodeAt(k); h = Math.imul(h, 16777619); }
+    let s = h >>> 0;
+    const rand = () => { s += 0x6d2b79f5; let t = s; t = Math.imul(t ^ (t >>> 15), t | 1); t ^= t + Math.imul(t ^ (t >>> 7), t | 61); return ((t ^ (t >>> 14)) >>> 0) / 4294967296; };
+    const idx = Array.from({ length: n }, (_, i) => i);
+    for (let i = n - 1; i > 0; i--) { const j = Math.floor(rand() * (i + 1)); [idx[i], idx[j]] = [idx[j], idx[i]]; }
+    return idx;
+  }
+  $: orders = questions.map((q) => shuffleOrder(q.prompt, q.options.length));
+
   function choose(/** @type {number} */ qi, /** @type {number} */ oi) {
     answers = { ...answers, [qi]: oi };
   }
@@ -18,7 +31,8 @@
     <div class="q">
       <p class="prompt"><span class="qn">Q{i + 1}.</span> {q.prompt}</p>
       <div class="options">
-        {#each q.options as opt, j}
+        {#each orders[i] as j (j)}
+          {@const opt = q.options[j]}
           {@const picked = answers[i] === j}
           {@const isCorrect = j === q.correct}
           <button
@@ -39,7 +53,7 @@
   {/each}
 
   {#if answeredCount === questions.length && questions.length}
-    <p class="score">Score : {score} / {questions.length}</p>
+    <p class="score" role="status" aria-live="polite">Score : {score} / {questions.length}</p>
   {/if}
 </div>
 

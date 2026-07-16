@@ -90,7 +90,7 @@ Comme pour Mann-Whitney, on compare $T$ à une **valeur critique** tabulée. La 
 On rejette l'hypothèse nulle (« le traitement ne change rien ») lorsque le $T$ observé est **inférieur ou égal** à la valeur critique de la table, pour l'effectif $n$ retenu.
 :::
 
-Pour $n = 7$, au risque bilatéral $\alpha = 0{,}05$, la table donne une valeur critique de **2**. Notre $T = 1 \le 2$ : on **rejette** l'hypothèse nulle. Le traitement abaisse significativement la pression artérielle. Sept patients sur huit ont vu leur tension baisser, et les seules baisses représentent l'essentiel des rangs — le hasard seul l'expliquerait mal.
+Pour $n = 7$, au risque bilatéral $\alpha = 0{,}05$, la table donne une valeur critique de **2**. Notre $T = 1 \le 2$ : on **rejette** l'hypothèse nulle. Le traitement abaisse significativement la pression artérielle. Six patients sur huit ont vu leur tension baisser, un seul est monté — et de 1 mmHg —, un n'a pas bougé ; les baisses concentrent l'essentiel des rangs, ce que le hasard seul expliquerait mal.
 <!-- /step -->
 
 <!-- step:title="Ce que le T apparié capte (et ce qu'il ignore)" -->

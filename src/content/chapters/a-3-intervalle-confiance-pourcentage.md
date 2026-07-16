@@ -75,7 +75,7 @@ Un IC à 95 % ne signifie **pas** que 95 % des patients sont dans l'intervalle (
 <!-- /step -->
 
 <!-- step:title="Lien avec le test, et rôle de la largeur" -->
-Intervalle de confiance et test disent la même chose sous deux angles. Si une valeur théorique $p_0$ tombe **en dehors** de l'IC à 95 %, alors le test bilatéral de « $p = p_0$ » est significatif à 5 % — et réciproquement.
+Intervalle de confiance et test disent **presque** la même chose sous deux angles. En règle générale, si une valeur théorique $p_0$ tombe **en dehors** de l'IC à 95 %, le test bilatéral de « $p = p_0$ » est significatif à 5 % — et réciproquement. L'équivalence n'est toutefois **pas exacte** pour un pourcentage : l'IC estime l'erreur-standard sur la fréquence observée $f$, alors que le test l'estime sous $H_0$ sur $p_0$. Au voisinage d'une borne, les deux peuvent donc diverger.
 
 Ainsi, notre IC $[11\%\,;\,19\%]$ exclut par exemple 8 % : comparer nos 15 % à une référence de 8 % donnerait un test significatif. Il inclut en revanche 13 % : une référence de 13 % serait compatible avec nos données.
 
@@ -102,6 +102,6 @@ La précision d'un pourcentage se pilote *avant* l'étude : fixez la demi-largeu
 - Un pourcentage observé s'accompagne toujours de son **intervalle de confiance** : $f \pm 1{,}96\sqrt{f(1-f)/n}$.
 - L'IC à 95 % encadre la **vraie proportion** ; l'interprétation porte sur la méthode : 95 % des intervalles ainsi construits contiennent $p$.
 - Il ne décrit ni la dispersion des individus, ni une probabilité attachée à l'intervalle une fois calculé.
-- IC et test sont deux faces d'une même pièce : $p_0$ hors de l'IC ⇔ test significatif à 5 %.
+- IC et test sont deux faces d'une même pièce : $p_0$ hors de l'IC ≈ test significatif à 5 % (équivalence non exacte pour un pourcentage — voir plus haut).
 - Diviser la largeur par 2 exige de **quadrupler $n$** ; on dimensionne l'étude avec $n = 1{,}96^2 f(1-f)/i^2$.
 <!-- /step -->

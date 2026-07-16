@@ -39,6 +39,8 @@ Par convention, on place la **plus grande** variance au numérateur, de sorte qu
 
 $$F = \frac{s_1^2}{s_2^2} \qquad (s_1^2 \geq s_2^2)$$
 
+Attention : forcer la plus grande variance en haut revient à tester $H_1 : \sigma_1^2 \neq \sigma_2^2$, donc en **bilatéral**. Au risque global de 5 %, on lit alors la table **à $\alpha/2 = 2{,}5\,\%$** — sinon le vrai risque de première espèce est doublé (10 %).
+
 - $F$ proche de 1 → les deux variances sont compatibles ; l'écart est du bruit d'échantillonnage.
 - $F$ nettement supérieur à 1 (2, 3, 4…) → l'une des dispersions est réellement plus grande.
 
@@ -65,7 +67,7 @@ La plus grande variance est celle de A, donc au numérateur :
 
 $$F = \frac{0{,}36}{0{,}12} = 3{,}0$$
 
-avec $\nu_1 = 12$ et $\nu_2 = 15$ degrés de liberté. La table de $F$ à 5 % donne pour ce couple un seuil d'environ **2,5**. Comme $3{,}0 > 2{,}5$, on **rejette** l'égalité : la technique A est significativement plus dispersée (moins reproductible) que la technique B.
+avec $\nu_1 = 12$ et $\nu_2 = 15$ degrés de liberté. Comme le test est bilatéral, on lit la table **à 2,5 %** : le seuil vaut alors $F \approx 2{,}96$. Comme $3{,}0 > 2{,}96$, on **rejette** — de justesse — l'égalité : la technique A est significativement plus dispersée (moins reproductible) que la technique B. *(Lu par erreur à 5 %, le seuil serait 2,5 et l'on conclurait bien trop facilement.)*
 <!-- /step -->
 
 <!-- step:title="L'usage principal : test préliminaire" -->

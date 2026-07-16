@@ -108,10 +108,16 @@ La correction de Yates n'est utile que pour des effectifs **modestes**. Sur de g
 :::
 <!-- /step -->
 
+:::pitfall
+**Données appariées : le χ² 2×2 est faux.** Tout ceci suppose **deux groupes indépendants**. Si le même sujet est compté deux fois — un pourcentage mesuré **avant puis après** chez les mêmes patients, ou deux tests appliqués à chaque malade — les lignes ne sont plus indépendantes. On utilise alors le **test de McNemar**, qui ne regarde que les **paires discordantes** (les sujets qui ont changé de statut) : $\chi^2 = (b-c)^2/(b+c)$ sur ces seules cases. Confondre les deux, c'est comparer des sujets à eux-mêmes comme s'ils étaient étrangers.
+:::
+<!-- /step -->
+
 <!-- step:title="À retenir" -->
 - Le tableau **2 × 2** est un χ² d'indépendance à **1 degré de liberté** ; une seule case y est libre.
 - Formule directe : $\chi^2 = N(ad-bc)^2 / [(a+b)(c+d)(a+c)(b+d)]$ ; seuil à 5 % : **3,84**.
 - Il est **équivalent** à la comparaison de deux pourcentages : $\chi^2 = z^2$, mêmes conclusions.
 - La **correction de continuité** (Yates) diminue le χ² et rend le test plus prudent pour les effectifs modestes.
 - Effectifs attendus trop faibles (< 5) : ni le χ², ni Yates ne conviennent → test exact de Fisher.
+- **Mesures appariées** (mêmes sujets avant/après) : ni χ² ni Fisher, mais **McNemar** sur les paires discordantes.
 <!-- /step -->

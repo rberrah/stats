@@ -13,9 +13,12 @@
   const W = 500, H = 240, m = { top: 16, right: 16, bottom: 34, left: 16 };
   $: iW = W - m.left - m.right;
   $: iH = H - m.top - m.bottom;
-  // fenêtre : p ± 4σ, bornée à [0,1]
-  $: xmin = Math.max(0, p - 4 * sigma);
-  $: xmax = Math.min(1, p + 4 * sigma);
+  // Fenêtre : p ± 4σ, bornée à [0,1] — MAIS on l'élargit toujours pour englober la fréquence
+  // observée f. Sans cela, quand n augmente la cloche se resserre et le marqueur « f » finit
+  // par sortir du cadre (dès n > 256 aux valeurs par défaut) : l'étudiant fait « augmentez n »
+  // et voit disparaître le trait qui illustre justement la leçon.
+  $: xmin = Math.max(0, Math.min(p - 4 * sigma, f - 0.02));
+  $: xmax = Math.min(1, Math.max(p + 4 * sigma, f + 0.02));
   $: xOf = (v) => ((v - xmin) / (xmax - xmin || 1)) * iW;
   const phi = (t) => Math.exp(-0.5 * t * t) / Math.sqrt(2 * Math.PI);
   $: peak = phi(0);

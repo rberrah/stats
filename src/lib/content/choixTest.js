@@ -29,17 +29,43 @@ export const arbre = {
                     "On rapporte l'écart f − p à sa fluctuation attendue : z = (f − p) / √(p(1−p)/n), comparé à 1,96.",
                     [{ label: "Principe des tests", slug: "a-2-principe-des-tests" }, { label: "L'écart-réduit", slug: "a-1-ecart-reduit" }]) },
                 { label: "Deux pourcentages (deux groupes)",
-                  node: leaf("Comparaison de deux pourcentages (χ² sur tableau 2×2)",
-                    "Écart-réduit de la différence des deux fréquences, ou χ² équivalent sur le tableau 2×2.",
-                    [{ label: "Comparaison de deux pourcentages", slug: "a-4-comparaison-deux-pourcentages" }, { label: "Le tableau 2×2", slug: "a-7-tableau-2x2" }]) },
+                  node: {
+                    q: "Les deux mesures portent-elles sur les MÊMES sujets (avant/après) ou sur deux groupes indépendants ?",
+                    options: [
+                      { label: "Deux groupes indépendants",
+                        node: {
+                          q: "Tous les effectifs ATTENDUS dépassent-ils 5 ?",
+                          options: [
+                            { label: "Oui → le χ² est valide",
+                              node: leaf("Comparaison de deux pourcentages (écart-réduit ou χ² 2×2)",
+                                "Écart-réduit de la différence des deux fréquences, ou χ² équivalent sur le tableau 2×2.",
+                                [{ label: "Comparaison de deux pourcentages", slug: "a-4-comparaison-deux-pourcentages" }, { label: "Le tableau 2×2", slug: "a-7-tableau-2x2" }]) },
+                            { label: "Non (un effectif attendu < 5)",
+                              node: leaf("Test exact de Fisher",
+                                "Sous 5 attendus, le χ² n'est plus valide : on calcule la probabilité exacte à marges fixées.",
+                                [{ label: "Test exact de Fisher", slug: "a-8-test-exact-fisher" }]) }
+                          ]
+                        } },
+                      { label: "Mêmes sujets (données appariées : avant/après)",
+                        node: leaf("Test de McNemar",
+                          "Un pourcentage mesuré deux fois sur les mêmes sujets est apparié : le χ² d'indépendance est faux ici. McNemar ne s'intéresse qu'aux sujets qui CHANGENT (les paires discordantes).",
+                          [{ label: "Le tableau 2×2 (et l'appariement)", slug: "a-7-tableau-2x2" }]) }
+                    ]
+                  } },
                 { label: "Plusieurs groupes ou plusieurs catégories (tableau de contingence)",
-                  node: leaf("Test du χ² d'indépendance",
-                    "Compare les effectifs observés aux effectifs attendus sous indépendance ; ddl = (lignes−1)(colonnes−1).",
-                    [{ label: "χ² d'indépendance", slug: "a-6-chi2-independance" }]) },
-                { label: "De petits effectifs (effectifs attendus < 5)",
-                  node: leaf("Test exact de Fisher",
-                    "Quand le χ² n'est plus valide (effectifs attendus trop faibles), on calcule la probabilité exacte.",
-                    [{ label: "Test exact de Fisher", slug: "a-8-test-exact-fisher" }]) }
+                  node: {
+                    q: "Tous les effectifs ATTENDUS dépassent-ils 5 ?",
+                    options: [
+                      { label: "Oui → le χ² est valide",
+                        node: leaf("Test du χ² d'indépendance",
+                          "Compare les effectifs observés aux effectifs attendus sous indépendance ; ddl = (lignes−1)(colonnes−1).",
+                          [{ label: "χ² d'indépendance", slug: "a-6-chi2-independance" }]) },
+                      { label: "Non (un effectif attendu < 5)",
+                        node: leaf("Test exact de Fisher",
+                          "Quand un effectif attendu passe sous 5, l'approximation du χ² n'est plus fiable : on calcule la probabilité exacte.",
+                          [{ label: "Test exact de Fisher", slug: "a-8-test-exact-fisher" }]) }
+                    ]
+                  } }
               ]
             }
           },

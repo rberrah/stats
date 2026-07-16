@@ -76,7 +76,7 @@ Un $r_s \approx 0{,}96$ : la liaison monotone est presque parfaite.
 <!-- /step -->
 
 <!-- step:title="Spearman contre Pearson : la comparaison décisive" -->
-Sur ces mêmes données, la corrélation de **Pearson** appliquée aux valeurs brutes vaudrait environ $0{,}80$ : correcte, mais nettement plus basse. Pourquoi cet écart ?
+Sur ces mêmes données, la corrélation de **Pearson** appliquée aux valeurs brutes vaut environ $0{,}91$ : déjà plus basse que $r_s$, et elle s'effondrerait bien davantage sur une courbure plus prononcée ou en présence d'un point franchement aberrant. Pourquoi cet écart ?
 
 Parce que Pearson est tiré vers le bas par la **courbure** : les points ne s'alignent pas sur une droite, et l'unique valeur géante ($Y = 150$) déforme tout le calcul. Spearman, en travaillant sur les rangs, ignore et la courbure et l'ampleur des écarts : il ne voit que l'ordre, qui, lui, est quasi parfait.
 

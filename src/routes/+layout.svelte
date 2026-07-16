@@ -23,6 +23,11 @@
       : $page.url.pathname.startsWith(`${base}${href}`);
 </script>
 
+<svelte:head>
+  <title>Stat &amp; Biologie</title>
+</svelte:head>
+
+<a class="skip-link" href="#main-content">Aller au contenu</a>
 <div class="app">
   <header>
     <a class="logo" href={`${base}/`}>
@@ -43,7 +48,7 @@
     </nav>
   </header>
 
-  <main>
+  <main id="main-content">
     {@render children()}
   </main>
 
