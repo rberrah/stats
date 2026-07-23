@@ -14,15 +14,15 @@ reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Dans le test t de comparaison de deux moyennes, que représente le dénominateur s_d ?"
     options:
-      - "L'erreur-standard de la différence des deux moyennes, c'est-à-dire l'ampleur des fluctuations attendues du numérateur sous le seul effet du hasard."
-      - "L'écart-type des individus du premier groupe."
-      - "La différence des deux moyennes."
+      - "L'erreur-standard de la différence des moyennes : l'ampleur des fluctuations du numérateur sous le seul effet du hasard."
+      - "L'écart-type des valeurs individuelles, mesurant la dispersion des patients autour de la moyenne de leur groupe."
+      - "La différence observée entre les deux moyennes, c'est-à-dire le signal placé au numérateur du rapport."
     correct: 0
   - prompt: "Parmi ces conditions, laquelle N'EST PAS requise pour appliquer le test t classique à deux échantillons ?"
     options:
-      - "Les deux groupes ont le même effectif."
-      - "Les données sont approximativement normales (ou n assez grand)."
-      - "Les deux variances sont comparables (égalité des variances)."
+      - "Les deux groupes comportent exactement le même nombre de sujets."
+      - "Les données sont approximativement normales (ou l'effectif assez grand)."
+      - "Les deux variances sont comparables (égalité des variances requise)."
     correct: 0
 ---
 

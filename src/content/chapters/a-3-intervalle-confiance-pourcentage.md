@@ -16,13 +16,13 @@ quiz:
     options:
       - "f ± 1,96 × √(f(1−f)/n)"
       - "f ± 1,96 × f(1−f)/n"
-      - "f ± 1,96 × n"
+      - "f ± 1,96 × √(f(1−f))"
     correct: 0
   - prompt: "Un IC à 95 % de [11 % ; 19 %] signifie que :"
     options:
-      - "95 % des patients ont la caractéristique étudiée"
+      - "la vraie proportion a exactement 95 % de chances d'être entre 11 % et 19 %"
       - "il y a 95 % de chances que le prochain patient soit dans cet intervalle"
-      - "cet intervalle, construit ainsi, encadre la vraie proportion dans 95 % des études"
+      - "cet intervalle encadre la vraie proportion dans 95 % des études répétées"
     correct: 2
   - prompt: "Pour diviser par deux la largeur d'un intervalle de confiance, il faut environ :"
     options:

@@ -14,15 +14,15 @@ reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Comment construit-on la statistique F pour comparer deux variances ?"
     options:
-      - "En faisant la différence des deux variances."
+      - "En calculant la différence entre la plus grande et la plus petite variance."
       - "En calculant le rapport de la plus grande variance sur la plus petite."
-      - "En divisant la somme des variances par le nombre de sujets."
+      - "En divisant la somme des deux variances par leur nombre de degrés de liberté."
     correct: 1
   - prompt: "À quoi sert le plus souvent le test F dans la comparaison de deux moyennes ?"
     options:
-      - "À remplacer le test t quand n est petit."
-      - "À vérifier au préalable l'égalité des variances, condition d'application du test t classique."
-      - "À comparer directement les deux moyennes."
+      - "À remplacer le test t lorsque les effectifs des deux groupes sont trop petits."
+      - "À vérifier au préalable l'égalité des variances, condition d'emploi du test t classique."
+      - "À comparer directement les deux moyennes sans passer par la statistique t."
     correct: 1
 ---
 

@@ -20,9 +20,9 @@ quiz:
     correct: 0
   - prompt: "Que dit, en substance, le théorème central limite ?"
     options:
-      - "Toute variable biologique suit une loi normale."
-      - "La moyenne d'un échantillon suit approximativement une loi normale, même si les individus ne sont pas distribués normalement, dès que n est assez grand."
-      - "Plus l'échantillon est grand, plus les individus se ressemblent."
+      - "Si les individus suivent une loi normale, alors leur moyenne aussi ; sinon aucune des deux ne peut l'être."
+      - "La moyenne d'un échantillon suit approximativement une loi normale dès que n est assez grand, même si les individus ne le sont pas."
+      - "Plus l'échantillon est grand, plus la distribution des individus eux-mêmes se rapproche d'une loi normale."
     correct: 1
 ---
 

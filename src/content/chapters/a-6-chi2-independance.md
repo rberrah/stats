@@ -16,7 +16,7 @@ quiz:
     options:
       - "(total de sa ligne × total de sa colonne) / effectif total"
       - "(total de sa ligne + total de sa colonne) / effectif total"
-      - "effectif total / nombre de cases"
+      - "l'effectif total réparti également sur le nombre de cases"
     correct: 0
   - prompt: "Pour un tableau à l lignes et c colonnes, le nombre de degrés de liberté est :"
     options:
@@ -26,9 +26,9 @@ quiz:
     correct: 1
   - prompt: "Un χ² d'indépendance significatif signifie que :"
     options:
-      - "les deux caractères sont indépendants"
+      - "les deux caractères varient de manière indépendante"
       - "les deux caractères sont liés (non indépendants)"
-      - "l'un des caractères cause l'autre"
+      - "l'un des caractères est la cause directe de l'autre"
     correct: 1
 ---
 

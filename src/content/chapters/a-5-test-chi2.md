@@ -15,8 +15,8 @@ quiz:
   - prompt: "La statistique du χ² d'ajustement se calcule par :"
     options:
       - "la somme des (observé − calculé)² divisée par le calculé, sur toutes les catégories"
-      - "la somme des observé − calculé, sur toutes les catégories"
-      - "la somme des observé² divisée par le calculé"
+      - "la somme des (observé − calculé) divisée par le calculé, sur toutes les catégories"
+      - "la somme des (observé − calculé)² divisée par l'observé, sur toutes les catégories"
     correct: 0
   - prompt: "Pour un ajustement à k catégories dont les proportions théoriques sont fixées d'avance, le nombre de degrés de liberté est :"
     options:
@@ -28,7 +28,7 @@ quiz:
     options:
       - "les effectifs observés s'écartent significativement de la théorie"
       - "la répartition observée est compatible avec la répartition théorique"
-      - "il faut refaire l'expérience jusqu'à obtenir un grand χ²"
+      - "la répartition observée reproduit exactement la répartition théorique"
     correct: 1
 ---
 

@@ -15,20 +15,20 @@ quiz:
   - prompt: "Quand préfère-t-on le test exact de Fisher au χ² sur un tableau 2 × 2 ?"
     options:
       - "quand un ou plusieurs effectifs attendus sont inférieurs à 5"
-      - "quand tous les effectifs sont très grands"
-      - "quand le pourcentage commun vaut exactement 0,5"
+      - "quand un ou plusieurs effectifs observés sont inférieurs à 5"
+      - "quand tous les effectifs attendus dépassent largement la valeur 5"
     correct: 0
   - prompt: "Sur quoi repose le calcul du test exact de Fisher ?"
     options:
-      - "sur l'approximation du χ² par la loi normale"
+      - "sur l'approximation de la loi du χ² par une loi normale centrée réduite"
       - "sur la probabilité exacte de chaque tableau possible, à marges fixées"
-      - "sur la moyenne des effectifs observés"
+      - "sur la loi binomiale appliquée séparément à chaque case du tableau"
     correct: 1
   - prompt: "Pour obtenir le degré de signification, le test de Fisher additionne :"
     options:
-      - "la probabilité du seul tableau observé"
+      - "la seule probabilité du tableau observé, sans les tableaux plus extrêmes"
       - "la probabilité du tableau observé et des tableaux au moins aussi extrêmes"
-      - "les effectifs de toutes les cases"
+      - "la probabilité de tous les tableaux possibles compatibles avec les marges"
     correct: 1
 ---
 

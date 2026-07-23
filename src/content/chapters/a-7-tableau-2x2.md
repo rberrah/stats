@@ -22,7 +22,7 @@ quiz:
     options:
       - "χ² = z²"
       - "χ² = 2z"
-      - "il n'y a aucun lien"
+      - "χ² = √z"
     correct: 0
   - prompt: "La correction de continuité (Yates) sur un tableau 2 × 2 a pour effet de :"
     options:

@@ -14,15 +14,15 @@ reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Pourquoi la normalité des données est-elle plus critique sur un petit échantillon que sur un grand ?"
     options:
-      - "Parce que le petit échantillon a toujours une variance plus grande."
-      - "Parce que sur un grand échantillon, le théorème central limite rend la moyenne normale même si les données ne le sont pas ; sur un petit, ce secours disparaît."
-      - "Parce que la moyenne d'un petit échantillon est biaisée."
+      - "Parce qu'un petit échantillon présente toujours une variance plus grande, qui déforme davantage la distribution de la moyenne."
+      - "Parce que le théorème central limite normalise la moyenne d'un grand échantillon même si les données ne le sont pas ; sur un petit, ce secours disparaît."
+      - "Parce que la moyenne d'un petit échantillon est biaisée, un défaut que seul un grand nombre de sujets parvient à corriger."
     correct: 1
   - prompt: "À quoi sert la loi de Student, avec ses queues plus épaisses que la loi normale ?"
     options:
-      - "À rendre les tests plus faciles à réussir."
+      - "À corriger le biais de la moyenne quand l'échantillon comporte trop peu de sujets pour être fiable."
       - "À compenser l'incertitude sur la variance estimée sur peu de données, en exigeant un t plus grand pour conclure."
-      - "À remplacer le calcul de la moyenne."
+      - "À remplacer la loi normale dès que la variance de la population est connue avec précision."
     correct: 1
 ---
 

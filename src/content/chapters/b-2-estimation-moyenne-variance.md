@@ -14,15 +14,15 @@ reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Pourquoi divise-t-on la somme des carrés des écarts par (n−1) et non par n pour estimer la variance d'une population ?"
     options:
-      - "Parce que c'est plus simple à calculer."
-      - "Parce que les écarts sont calculés autour de la moyenne observée, ce qui « consomme » un degré de liberté et rendrait l'estimation trop petite si l'on divisait par n."
-      - "Parce que n−1 donne toujours un nombre entier."
+      - "Parce qu'un dénominateur plus petit gonfle la variance : une marge de sécurité destinée à ne jamais la sous-estimer."
+      - "Parce que les écarts sont mesurés autour de la moyenne observée, ce qui consomme un degré de liberté ; diviser par n sous-estimerait la variance."
+      - "Parce que la vraie moyenne étant inconnue, on écarte une observation avant de calculer les écarts à la moyenne."
     correct: 1
   - prompt: "Un estimateur est dit sans biais lorsque :"
     options:
-      - "il donne toujours la valeur exacte sur chaque échantillon."
-      - "il tombe juste en moyenne, sur l'ensemble des échantillons possibles."
-      - "il augmente avec la taille de l'échantillon."
+      - "sa valeur coïncide exactement avec le paramètre de la population sur chacun des échantillons."
+      - "sa valeur tombe juste en moyenne sur l'ensemble des échantillons possibles, sans erreur systématique."
+      - "sa valeur se rapproche du paramètre à mesure que la taille de l'échantillon augmente."
     correct: 1
 ---
 

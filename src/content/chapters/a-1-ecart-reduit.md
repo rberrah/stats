@@ -20,9 +20,9 @@ quiz:
     correct: 0
   - prompt: "On calcule un écart-réduit z = 2,6. Au repère habituel de 1,96, on retient l'idée que :"
     options:
-      - "l'écart est banal, car f est forcément proche de p"
+      - "l'écart reste compatible avec une simple fluctuation d'échantillonnage"
       - "l'écart est trop grand pour une simple fluctuation d'échantillonnage"
-      - "le calcul est impossible sans connaître la population entière"
+      - "l'écart traduit une erreur de mesure plutôt qu'un effet du hasard"
     correct: 1
   - prompt: "Si l'on multiplie la taille de l'échantillon par 4, l'écart-type de f est :"
     options:

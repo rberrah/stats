@@ -15,19 +15,19 @@ quiz:
   - prompt: "Que suppose exactement l'hypothèse nulle H0 quand on compare un pourcentage observé à une valeur théorique p0 ?"
     options:
       - "que la vraie proportion vaut p0, l'écart observé n'étant qu'une fluctuation"
-      - "que la vraie proportion est différente de p0"
-      - "que l'échantillon est trop petit pour conclure"
+      - "que la vraie proportion diffère de p0, l'écart traduisant un effet réel"
+      - "que la fréquence observée est strictement égale à la valeur théorique p0"
     correct: 0
   - prompt: "Le degré de signification p d'un test représente :"
     options:
-      - "la probabilité que H0 soit vraie"
+      - "la probabilité que l'hypothèse nulle H0 soit vraie au vu des données"
       - "la probabilité d'observer un écart au moins aussi grand si H0 est vraie"
-      - "la proportion vraie dans la population"
+      - "la probabilité d'obtenir exactement l'écart observé si H0 est vraie"
     correct: 1
   - prompt: "On trouve z = 1,4, donc p ≈ 0,16, au seuil α = 5 %. La bonne conclusion est :"
     options:
-      - "on rejette H0 : l'écart est significatif"
-      - "on démontre que H0 est vraie"
+      - "on rejette H0 : l'écart est trop marqué pour une simple fluctuation"
+      - "on garde H0 : l'égalité à la valeur théorique est démontrée"
       - "on ne rejette pas H0 : l'écart est compatible avec le hasard"
     correct: 2
 ---

@@ -15,8 +15,8 @@ quiz:
   - prompt: "Sous H0 (les deux groupes ont la même proportion), quelle valeur utilise-t-on pour calculer l'écart-type de la différence ?"
     options:
       - "le pourcentage commun, obtenu en regroupant les deux groupes"
-      - "le plus grand des deux pourcentages observés"
-      - "la valeur 0,5, toujours la plus prudente"
+      - "le plus élevé des deux pourcentages observés dans les deux groupes"
+      - "chaque proportion de groupe prise séparément, sans les fusionner"
     correct: 0
   - prompt: "Deux groupes de tailles n1 et n2. L'erreur-standard de la différence fait intervenir le terme :"
     options:
@@ -26,9 +26,9 @@ quiz:
     correct: 1
   - prompt: "On compare 30 % (traité) à 18 % (placebo) et l'on trouve z = 2,8. On conclut :"
     options:
-      - "la différence est compatible avec le hasard"
+      - "la différence observée est compatible avec le seul hasard"
       - "la différence entre les deux groupes est significative"
-      - "le traitement est dangereux"
+      - "la vraie différence entre groupes vaut exactement 12 points"
     correct: 1
 ---
 

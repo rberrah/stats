@@ -16,13 +16,13 @@ quiz:
     options:
       - "Le fait que les deux facteurs soient mesurés sur les mêmes sujets."
       - "Le fait que l'effet d'un facteur dépende du niveau de l'autre facteur."
-      - "Le fait que les deux facteurs aient le même effet."
+      - "Le fait que les deux facteurs produisent chacun le même effet sur la réponse."
     correct: 1
   - prompt: "Quel est l'avantage d'un plan factoriel (croiser les facteurs) par rapport à l'étude d'un seul facteur à la fois ?"
     options:
-      - "Il évite d'avoir à calculer des moyennes."
-      - "Il est toujours plus rapide même avec beaucoup de facteurs."
-      - "Il estime les effets de chaque facteur ET leurs interactions, avec un meilleur rendement des sujets."
+      - "Il isole l'effet de chaque facteur en le faisant varier seul, les autres restant fixés."
+      - "Il réduit le nombre total de combinaisons à tester quand les facteurs sont nombreux."
+      - "Il estime l'effet de chaque facteur ET leurs interactions, pour un meilleur rendement des sujets."
     correct: 2
 ---
 

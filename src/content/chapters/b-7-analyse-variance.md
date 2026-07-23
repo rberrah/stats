@@ -14,15 +14,15 @@ reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Pourquoi ne pas comparer 4 moyennes en faisant tous les tests t deux à deux ?"
     options:
-      - "Parce que le test t est réservé à deux groupes de même effectif."
-      - "Parce que multiplier les tests gonfle le risque global de conclure à tort à au moins une différence (inflation de α)."
-      - "Parce que le test t ne fonctionne pas avec plus de 30 sujets."
+      - "Parce que le test t suppose deux groupes de même effectif, condition ici impossible à réunir."
+      - "Parce que multiplier les comparaisons gonfle le risque global de conclure à tort à au moins une différence."
+      - "Parce que chaque comparaison deux à deux néglige l'information des autres groupes et perd en puissance."
     correct: 1
   - prompt: "Sur quoi repose la décision dans une analyse de la variance ?"
     options:
-      - "Sur le rapport F = variance inter-groupes / variance intra-groupes."
-      - "Sur la différence entre la plus grande et la plus petite moyenne."
-      - "Sur la somme de toutes les moyennes."
+      - "Sur le rapport F entre la variance inter-groupes et la variance intra-groupes."
+      - "Sur l'écart entre la plus grande et la plus petite des moyennes de groupe."
+      - "Sur la moyenne des écarts de chaque groupe à la moyenne générale de l'ensemble."
     correct: 0
 ---
 
