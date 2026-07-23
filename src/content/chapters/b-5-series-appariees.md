@@ -15,8 +15,8 @@ quiz:
   - prompt: "Quel est l'avantage décisif d'un plan apparié (avant/après chez les mêmes sujets) par rapport à deux groupes indépendants ?"
     options:
       - "Il élimine la variabilité entre sujets, réduite à un bruit parasite, et gagne ainsi beaucoup en puissance."
-      - "Il double le nombre de mesures et accroît d'autant la taille effective de l'échantillon analysé."
-      - "Il dispense de toute hypothèse de normalité, puisqu'on compare chaque sujet à lui-même."
+      - "Il double le nombre de mesures recueillies et accroît d'autant la taille effective de l'échantillon finalement analysé."
+      - "Il dispense de toute hypothèse de normalité, puisqu'on compare désormais chaque sujet à lui-même seul."
     correct: 0
   - prompt: "Sur quelle grandeur porte réellement le calcul dans un test t apparié ?"
     options:

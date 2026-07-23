@@ -22,7 +22,7 @@ quiz:
     options:
       - "Si les individus suivent une loi normale, alors leur moyenne aussi ; sinon aucune des deux ne peut l'être."
       - "La moyenne d'un échantillon suit approximativement une loi normale dès que n est assez grand, même si les individus ne le sont pas."
-      - "Plus l'échantillon est grand, plus la distribution des individus eux-mêmes se rapproche d'une loi normale."
+      - "Plus l'échantillon est grand, plus la distribution des individus eux-mêmes se rapproche d'une loi normale, quelle que soit sa forme de départ."
     correct: 1
 ---
 

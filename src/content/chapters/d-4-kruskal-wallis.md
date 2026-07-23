@@ -15,8 +15,8 @@ quiz:
   - prompt: "Le test de Kruskal-Wallis est l'équivalent non paramétrique de quel test paramétrique ?"
     options:
       - "L'analyse de variance (ANOVA) à un facteur"
-      - "Le t de Student apparié"
-      - "Le test du khi-deux d'indépendance"
+      - "Le t de Student pour deux groupes indépendants"
+      - "Le test du khi-deux d'indépendance entre variables"
     correct: 0
   - prompt: "À quelle loi compare-t-on la statistique H pour décider, et avec combien de degrés de liberté (K groupes) ?"
     options:

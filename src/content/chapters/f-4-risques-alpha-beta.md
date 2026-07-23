@@ -14,9 +14,9 @@ reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Un traitement est en réalité efficace, mais le test conclut « pas de différence significative ». De quelle erreur s'agit-il ?"
     options:
-      - "Une erreur de deuxième espèce (risque β) : on rate une vraie différence"
+      - "Une erreur de deuxième espèce (risque β) : on rate un effet réel"
       - "Une erreur de première espèce (risque α) : on crie au loup à tort"
-      - "Un biais de sélection dans l'échantillon"
+      - "Un simple manque de puissance, sans réelle erreur de décision"
     correct: 0
   - prompt: "À seuil α fixé, quel est le moyen le plus direct d'augmenter la puissance d'un test ?"
     options:

@@ -15,8 +15,8 @@ quiz:
   - prompt: "La sensibilité d'un test est la probabilité que :"
     options:
       - "un sujet réellement malade ait un test positif"
-      - "un sujet ayant un test positif soit malade"
-      - "un sujet sain ait un test négatif"
+      - "un sujet ayant un test positif soit réellement malade"
+      - "un sujet réellement sain ait un test négatif"
     correct: 0
   - prompt: "À sensibilité et spécificité fixées, si la prévalence de la maladie diminue, la valeur prédictive positive (VPP) :"
     options:
@@ -26,9 +26,9 @@ quiz:
     correct: 2
   - prompt: "Un rapport de vraisemblance positif (LR+) élevé indique qu'un test positif :"
     options:
-      - "modifie peu la probabilité de maladie"
+      - "ne modifie quasiment pas la probabilité de maladie"
       - "augmente fortement la probabilité de maladie"
-      - "dépend uniquement de la prévalence"
+      - "dépend surtout de la prévalence de la maladie testée"
     correct: 1
 ---
 

@@ -14,15 +14,15 @@ reviewed_on: "2026-07-09"
 quiz:
   - prompt: "On code le groupe sanguin en 1 (O), 2 (A), 3 (B), 4 (AB). Peut-on calculer une « moyenne » de groupe sanguin ?"
     options:
-      - "Non : les chiffres ne sont qu'des étiquettes, la variable reste qualitative"
-      - "Oui, puisque ce sont désormais des nombres"
-      - "Oui, mais seulement si les effectifs sont grands"
+      - "Non : ces codes ne sont que des étiquettes qualitatives"
+      - "Oui, ce sont désormais de vrais nombres que l'on peut moyenner"
+      - "Oui, à condition de traiter les codes comme un rang ordinal"
     correct: 0
   - prompt: "Un expérimentateur fixe lui-même les doses testées (10, 20, 40 mg) et mesure la réponse. Pour modéliser réponse en fonction de la dose, il utilise :"
     options:
       - "Une corrélation, car les deux variables fluctuent au hasard"
       - "Une régression, car la dose est contrôlée et la réponse aléatoire"
-      - "Un test du χ², car la dose a plusieurs niveaux"
+      - "Une ANOVA, car les trois doses définissent des groupes distincts"
     correct: 1
 ---
 

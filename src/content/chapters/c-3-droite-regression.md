@@ -15,14 +15,14 @@ quiz:
   - prompt: "La droite de régression de la PAS sur l'âge est y = 0,80 x + 97 (x en années, y en mmHg). Comment interpréter la pente 0,80 ?"
     options:
       - "En moyenne, la PAS augmente d'environ 0,80 mmHg par année d'âge supplémentaire"
-      - "80 % de la PAS est expliquée par l'âge"
-      - "À la naissance, la PAS vaut 0,80 mmHg"
+      - "L'âge explique environ 80 % de la variabilité observée de la PAS dans l'échantillon"
+      - "En moyenne, chaque mmHg de PAS supplémentaire correspond à 0,80 année d'âge"
     correct: 0
   - prompt: "Pourquoi la méthode s'appelle-t-elle « moindres carrés » ?"
     options:
-      - "Elle choisit la droite qui minimise la somme des carrés des écarts verticaux points-droite"
-      - "Elle élève la pente au carré pour la rendre positive"
-      - "Elle ne garde que les points dont l'écart est le plus petit"
+      - "Elle minimise la somme des carrés des écarts verticaux des points à la droite"
+      - "Elle minimise la somme des carrés des écarts horizontaux des points à la droite"
+      - "Elle minimise la somme des carrés des distances perpendiculaires à la droite"
     correct: 0
 ---
 

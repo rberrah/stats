@@ -14,21 +14,21 @@ reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Pourquoi ne pas utiliser une régression linéaire ordinaire pour prédire une variable binaire (malade / sain) ?"
     options:
-      - "parce qu'elle peut prédire des probabilités inférieures à 0 ou supérieures à 1, hors de tout sens"
-      - "parce qu'elle est trop lente à calculer"
-      - "parce qu'elle exige au moins trois catégories"
+      - "parce qu'elle peut prédire des probabilités inférieures à 0 ou supérieures à 1"
+      - "parce qu'une droite ne peut pas s'ajuster à des points valant tous 0 ou 1"
+      - "parce qu'elle exige que la variable à prédire suive une loi normale"
     correct: 0
   - prompt: "Dans une régression logistique, un coefficient s'interprète, après exponentiation, comme :"
     options:
-      - "un risque relatif"
-      - "un odds ratio"
-      - "une différence de moyennes"
+      - "un risque relatif entre les deux groupes"
+      - "un odds ratio, à autres variables constantes"
+      - "une différence de moyennes entre les groupes"
     correct: 1
   - prompt: "Que vaut le logit d'une probabilité ?"
     options:
-      - "le logarithme de la probabilité"
+      - "le logarithme de la probabilité seule, soit ln(p)"
       - "le logarithme des odds, soit ln[p / (1 − p)]"
-      - "la probabilité divisée par 2"
+      - "le rapport p / (1 − p), sans passer au logarithme"
     correct: 1
 ---
 

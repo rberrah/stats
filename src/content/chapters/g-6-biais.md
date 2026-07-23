@@ -14,9 +14,9 @@ reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Quelle est la différence fondamentale entre un biais et un manque de puissance ?"
     options:
-      - "Le biais est une erreur systématique qui persiste même sur un grand échantillon ; le manque de puissance est une erreur aléatoire qui se corrige en augmentant l'effectif."
-      - "Le biais concerne les études cas-témoins, le manque de puissance les cohortes."
-      - "Ce sont deux mots pour désigner la même chose."
+      - "Le biais est systématique et persiste sur un grand échantillon ; le manque de puissance est aléatoire et disparaît en augmentant l'effectif."
+      - "Le manque de puissance est systématique et persiste sur un grand échantillon ; le biais est aléatoire et disparaît en augmentant l'effectif."
+      - "Le biais élargit l'intervalle de confiance sans le décaler ; le manque de puissance le décale autour d'une valeur fausse."
     correct: 0
   - prompt: "Dans l'exemple « café et cancer du poumon », le tabac agit comme :"
     options:

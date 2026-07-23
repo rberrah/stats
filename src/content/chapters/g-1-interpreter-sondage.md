@@ -15,8 +15,8 @@ quiz:
   - prompt: "Un sondage donne 52 % sur 1 000 personnes, « marge d'erreur ± 3 points ». Cela signifie que :"
     options:
       - "la vraie proportion est très probablement comprise entre 49 % et 55 %"
-      - "52 % des personnes interrogées se sont trompées de 3 points"
-      - "le sondage est faux à 3 %"
+      - "il y a environ 3 % de risque que le résultat du sondage soit faux"
+      - "les 3 points mesurent l'écart-type des réponses individuelles"
     correct: 0
   - prompt: "Pour diviser par deux la marge d'erreur d'un sondage, il faut environ :"
     options:
@@ -26,9 +26,9 @@ quiz:
     correct: 1
   - prompt: "Un sondage en ligne recueille 50 000 réponses spontanées. Sa principale faiblesse est :"
     options:
-      - "une marge d'erreur beaucoup trop grande"
+      - "une marge d'erreur bien trop grande malgré l'effectif"
       - "un échantillon non représentatif de la population cible"
-      - "un nombre de sujets insuffisant"
+      - "un effectif encore trop faible pour être fiable"
     correct: 1
 ---
 

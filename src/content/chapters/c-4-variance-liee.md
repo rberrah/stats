@@ -15,14 +15,14 @@ quiz:
   - prompt: "Dans une régression, la variance totale de y se décompose en :"
     options:
       - "Variance liée (expliquée par x) + variance résiduelle"
-      - "Variance de x + variance de y"
+      - "Variance de x + variance de y, simplement additionnées"
       - "Variance de mesure + variance biologique uniquement"
     correct: 0
   - prompt: "Quelle est la relation entre r² et la décomposition de variance ?"
     options:
-      - "r² = variance liée / variance totale, la fraction de variance expliquée"
-      - "r² = variance résiduelle / variance totale"
-      - "r² = variance totale / variance liée"
+      - "r² = variance liée / variance totale, la fraction expliquée par x"
+      - "r² = variance résiduelle / variance totale, la fraction inexpliquée"
+      - "r² = variance liée / variance résiduelle, le rapport des deux parts"
     correct: 0
 ---
 

@@ -15,20 +15,20 @@ quiz:
   - prompt: "Un hazard ratio de 0,70 signifie que le groupe exposé a, à chaque instant :"
     options:
       - "un risque instantané réduit de 30 % par rapport au groupe de référence"
-      - "une survie de 70 % à la fin de l'étude"
-      - "un risque augmenté de 70 %"
+      - "une survie cumulée égale à 70 % de celle du groupe de référence"
+      - "un risque instantané réduit de 70 % par rapport au groupe de référence"
     correct: 0
   - prompt: "Que suppose l'hypothèse des risques proportionnels ?"
     options:
       - "que le hazard ratio est constant au cours du temps"
-      - "que les deux groupes ont exactement la même survie"
-      - "que le risque instantané est nul au départ"
+      - "que le risque de base reste constant au cours du temps"
+      - "que l'effet des covariables s'ajoute au risque de base"
     correct: 0
   - prompt: "Quel avantage majeur le modèle de Cox offre-t-il par rapport au test du log-rank ?"
     options:
-      - "il ne nécessite aucune donnée de survie"
+      - "il gère les données censurées, que le test du log-rank ne peut pas exploiter"
       - "il permet d'ajuster l'effet sur plusieurs covariables et de le quantifier par un HR"
-      - "il supprime la censure"
+      - "il se dispense de l'hypothèse des risques proportionnels exigée par le log-rank"
     correct: 1
 ---
 

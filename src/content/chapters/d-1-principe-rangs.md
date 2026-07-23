@@ -16,13 +16,13 @@ quiz:
     options:
       - "Petit effectif dont la distribution est douteuse, ou variable ordinale"
       - "Grand échantillon parfaitement gaussien, dont on connaît la variance"
-      - "Chaque fois qu'on veut absolument le maximum de puissance"
+      - "Quand on veut le maximum de puissance sur des mesures bien gaussiennes"
     correct: 0
   - prompt: "Quel est le principal « prix à payer » des tests sur les rangs quand les données sont réellement gaussiennes ?"
     options:
-      - "Ils exigent des effectifs pairs"
-      - "Ils sont légèrement moins puissants que le test paramétrique correspondant"
-      - "Ils ne fournissent jamais de valeur p"
+      - "Ils ne donnent aucune estimation chiffrée de l'ampleur de l'effet"
+      - "Ils sont un peu moins puissants que le test paramétrique équivalent"
+      - "Ils ne sont valides que si la distribution est parfaitement symétrique"
     correct: 1
 ---
 

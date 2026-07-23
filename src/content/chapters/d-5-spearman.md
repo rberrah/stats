@@ -14,9 +14,9 @@ reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Quel type de liaison le coefficient de Spearman rₛ est-il capable de détecter ?"
     options:
-      - "Uniquement une liaison strictement linéaire"
+      - "Seulement une liaison strictement linéaire, jamais courbe"
       - "Toute liaison monotone, même courbe (non linéaire)"
-      - "Uniquement une liaison en forme de U"
+      - "N'importe quelle liaison, même non monotone en U"
     correct: 1
   - prompt: "Comment calcule-t-on le coefficient de Spearman ?"
     options:

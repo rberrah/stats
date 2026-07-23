@@ -20,15 +20,15 @@ quiz:
     correct: 0
   - prompt: "Une aire sous la courbe ROC (AUC) de 0,5 correspond à :"
     options:
-      - "un test parfait"
-      - "un test qui ne fait pas mieux que le hasard"
-      - "un test très spécifique"
+      - "un test de discrimination moyenne, acceptable en clinique"
+      - "un test qui ne discrimine pas mieux qu'un tirage au hasard"
+      - "un test dont la sensibilité atteint 50 % à chaque seuil"
     correct: 1
   - prompt: "Pour un test de dépistage d'une maladie grave et curable, on choisira plutôt un seuil qui privilégie :"
     options:
       - "la spécificité, pour limiter les faux positifs"
       - "la sensibilité, pour ne manquer aucun malade"
-      - "ni l'une ni l'autre, le seuil n'a pas d'importance"
+      - "un équilibre Se/Sp obtenu via l'indice de Youden"
     correct: 1
 ---
 

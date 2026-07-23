@@ -14,9 +14,9 @@ reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Qu'appelle-t-on « temps immortel » dans une étude de survie ?"
     options:
-      - "la durée de vie moyenne des patients traités"
-      - "une période de suivi pendant laquelle, par construction, l'événement ne peut pas survenir"
-      - "le temps écoulé après le décès"
+      - "la durée de vie moyenne, plus longue, observée chez les patients traités"
+      - "une période de suivi où, par construction, l'événement ne peut pas survenir"
+      - "le temps de suivi perdu quand des patients quittent l'étude en cours"
     correct: 1
   - prompt: "Dans quel sens le biais de temps immortel fausse-t-il le résultat ?"
     options:
@@ -26,9 +26,9 @@ quiz:
     correct: 0
   - prompt: "Quelle solution corrige ce biais ?"
     options:
-      - "augmenter la taille de l'échantillon"
+      - "augmenter la taille de l'échantillon pour gagner en précision"
       - "traiter l'exposition comme une variable dépendante du temps"
-      - "exclure tous les patients décédés"
+      - "exclure les patients décédés avant de recevoir le traitement"
     correct: 1
 ---
 

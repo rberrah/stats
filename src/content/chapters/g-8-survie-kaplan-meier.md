@@ -14,21 +14,21 @@ reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Qu'appelle-t-on « censure » en analyse de survie ?"
     options:
-      - "le fait de retirer volontairement un patient jugé non conforme"
-      - "le fait qu'on ne connaisse pas la date exacte de l'événement, seulement qu'il n'est pas survenu jusqu'à une certaine date"
-      - "une erreur de mesure du temps de suivi"
+      - "le fait d'exclure de l'analyse un patient qui a quitté l'étude avant l'événement"
+      - "le fait d'ignorer la date de l'événement, en sachant seulement qu'il n'est pas encore survenu"
+      - "le fait de compter comme décédé un patient perdu de vue avant la fin du suivi"
     correct: 1
   - prompt: "Pourquoi la survie ne se résume-t-elle pas à un simple pourcentage de survivants ?"
     options:
       - "parce que les patients n'ont pas tous été suivis aussi longtemps (censure)"
-      - "parce que le pourcentage est toujours faux"
-      - "parce que la survie ne s'exprime jamais en proportion"
+      - "parce qu'un simple pourcentage ignore la date exacte de chaque décès"
+      - "parce qu'un pourcentage ne distingue pas les différentes causes de décès"
     correct: 0
   - prompt: "Que compare le test du log-rank ?"
     options:
-      - "les moyennes d'âge des deux groupes"
+      - "la survie des deux groupes à un unique instant fixé d'avance"
       - "les deux courbes de survie entières, pas seulement un instant donné"
-      - "uniquement la survie au dernier jour de suivi"
+      - "les médianes de survie estimées dans chacun des deux groupes"
     correct: 1
 ---
 

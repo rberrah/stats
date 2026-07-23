@@ -15,13 +15,13 @@ quiz:
   - prompt: "Dans le test T de Wilcoxon pour séries appariées, sur quoi porte le classement en rangs ?"
     options:
       - "Sur les valeurs de départ, avant tout calcul de différence"
-      - "Sur les valeurs absolues des différences intra-paires (hors différences nulles)"
+      - "Sur les valeurs absolues des différences de chaque paire"
       - "Sur les différences en gardant leur signe pour le classement"
     correct: 1
   - prompt: "Que fait-on d'une paire dont la différence avant/après est exactement nulle ?"
     options:
-      - "On lui attribue le rang 1 d'office"
-      - "On la compte deux fois, une positive et une négative"
+      - "On lui attribue le rang 1, comme à la plus petite différence"
+      - "On la compte deux fois, une fois positive et une fois négative"
       - "On l'écarte de l'analyse et on réduit l'effectif d'autant"
     correct: 2
 ---

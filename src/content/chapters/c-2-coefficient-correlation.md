@@ -15,14 +15,14 @@ quiz:
   - prompt: "Une étude trouve r = 0,70 entre deux dosages. Quelle part de la variance de l'un est « liée » à l'autre ?"
     options:
       - "Environ 49 %, car r² = 0,70² ≈ 0,49"
-      - "70 %, puisque r = 0,70"
-      - "Environ 84 %, car √0,70 ≈ 0,84"
+      - "Environ 70 %, puisque r vaut déjà 0,70"
+      - "Environ 84 %, en prenant √0,70 ≈ 0,84"
     correct: 0
   - prompt: "Deux études trouvent le même r = 0,45, l'une sur 8 individus, l'autre sur 200. Que peut-on dire ?"
     options:
       - "Le r n'est peut-être pas significatif sur 8 sujets mais l'est très nettement sur 200"
-      - "Les deux liaisons sont identiques, puisque r est le même"
-      - "Le r sur 8 sujets est plus fiable car l'échantillon est plus homogène"
+      - "Les deux liaisons sont identiques, puisque le coefficient r vaut 0,45 dans les deux cas"
+      - "Le r sur 8 sujets est plus solide, car un petit échantillon reste plus homogène"
     correct: 0
 ---
 

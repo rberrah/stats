@@ -22,7 +22,7 @@ quiz:
     options:
       - "U observé est inférieur ou égal à la valeur critique de la table"
       - "U observé est supérieur ou égal à la valeur critique de la table"
-      - "U observé est exactement égal à n₁ × n₂"
+      - "U observé s'écarte nettement de sa moyenne attendue n₁ × n₂ ÷ 2"
     correct: 0
 ---
 

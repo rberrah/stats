@@ -14,8 +14,8 @@ reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Un intervalle de confiance à 95 % d'une moyenne vaut [4,3 ; 4,9] mmol/L. Interprétation correcte ?"
     options:
-      - "95 % des patients de la population ont une valeur comprise entre 4,3 et 4,9 : l'intervalle décrit la dispersion des individus."
-      - "Il y a 95 % de chances que la mesure du prochain patient tombe entre 4,3 et 4,9 : c'est une prédiction individuelle."
+      - "95 % des patients de la population ont une valeur comprise entre 4,3 et 4,9 mmol/L : l'intervalle décrit la dispersion réelle des individus."
+      - "Il y a 95 % de chances que la mesure du prochain patient tombe entre 4,3 et 4,9 mmol/L : c'est une prédiction individuelle."
       - "La vraie moyenne de la population est plausiblement dans cet intervalle ; le procédé capture cette moyenne dans 95 % des échantillons."
     correct: 2
   - prompt: "Pour diviser par deux la largeur d'un intervalle de confiance d'une moyenne, il faut :"

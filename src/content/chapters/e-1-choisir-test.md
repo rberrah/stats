@@ -15,14 +15,14 @@ quiz:
   - prompt: "Vous comparez la pression artérielle moyenne (quantitative) entre trois groupes de traitement indépendants, avec des effectifs suffisants et des distributions à peu près normales. Quel test choisir ?"
     options:
       - "Une analyse de variance (ANOVA à un facteur)"
-      - "Un test du χ²"
-      - "Un test t de Student"
+      - "Trois tests t de Student, deux groupes à la fois"
+      - "Un test de Kruskal-Wallis sur les trois groupes"
     correct: 0
   - prompt: "Deux groupes indépendants, variable quantitative, mais petits effectifs et distributions nettement asymétriques. Le bon réflexe est :"
     options:
-      - "Utiliser un test t quand même, il est robuste"
+      - "Utiliser un test t de Student, réputé robuste aux écarts"
       - "Utiliser le test de Mann-Whitney (non paramétrique)"
-      - "Utiliser un test du χ²"
+      - "Utiliser le test de Wilcoxon des rangs signés (apparié)"
     correct: 1
 ---
 

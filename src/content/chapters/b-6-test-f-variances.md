@@ -20,9 +20,9 @@ quiz:
     correct: 1
   - prompt: "À quoi sert le plus souvent le test F dans la comparaison de deux moyennes ?"
     options:
-      - "À remplacer le test t lorsque les effectifs des deux groupes sont trop petits."
+      - "À remplacer le test t lorsque les effectifs des deux groupes comparés sont vraiment trop petits."
       - "À vérifier au préalable l'égalité des variances, condition d'emploi du test t classique."
-      - "À comparer directement les deux moyennes sans passer par la statistique t."
+      - "À comparer directement les deux moyennes sans passer par le calcul de la statistique t."
     correct: 1
 ---
 

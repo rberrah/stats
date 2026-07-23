@@ -14,15 +14,15 @@ reviewed_on: "2026-07-09"
 quiz:
   - prompt: "Le risque β (deuxième espèce) dépend de plusieurs facteurs. Lequel N'influence PAS β ?"
     options:
-      - "La taille de l'effet réel"
-      - "L'effectif de l'échantillon"
-      - "La couleur du graphique utilisé"
+      - "La taille de l'effet réel que l'on cherche à détecter"
+      - "L'effectif total de l'échantillon inclus dans l'étude"
+      - "La taille de la population dont on tire l'échantillon"
     correct: 2
   - prompt: "Un essai ne trouve pas de différence significative (p > 0,05) entre deux traitements, mais n'incluait que 12 patients. La conclusion correcte est :"
     options:
-      - "Les deux traitements sont équivalents, c'est prouvé"
-      - "L'essai manque de puissance : l'absence de preuve n'est pas une preuve d'absence"
-      - "Il faut abaisser α pour trouver la différence"
+      - "Les deux traitements sont équivalents, la preuve est faite"
+      - "L'essai, sous-puissant, ne prouve pas l'absence de différence"
+      - "Il faut relancer le test avec α = 0,10 pour atteindre le seuil"
     correct: 1
 ---
 

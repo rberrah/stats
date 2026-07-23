@@ -22,13 +22,13 @@ quiz:
     options:
       - "1 divisé par la réduction absolue du risque"
       - "1 divisé par la réduction relative du risque"
-      - "le risque relatif multiplié par 100"
+      - "1 divisé par le risque relatif du traitement"
     correct: 0
   - prompt: "L'odds ratio est une bonne approximation du risque relatif surtout quand :"
     options:
-      - "l'échantillon est très grand"
+      - "l'échantillon total est très grand dans les deux groupes"
       - "l'événement étudié est rare dans les deux groupes"
-      - "les deux groupes ont la même taille"
+      - "les deux groupes comparés ont exactement la même taille"
     correct: 1
 ---
 

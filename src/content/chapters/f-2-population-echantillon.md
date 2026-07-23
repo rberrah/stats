@@ -20,9 +20,9 @@ quiz:
     correct: 0
   - prompt: "Pourquoi le tirage au sort de l'échantillon est-il si important ?"
     options:
-      - "Il garantit que l'échantillon soit représentatif et rend le hasard calculable"
-      - "Il permet d'obtenir un échantillon de très grande taille"
-      - "Il supprime la variabilité biologique entre individus"
+      - "Il rend l'échantillon représentatif et le hasard calculable"
+      - "Il garantit à l'échantillon une taille largement suffisante"
+      - "Il supprime la variabilité biologique entre les individus"
     correct: 0
 ---
 

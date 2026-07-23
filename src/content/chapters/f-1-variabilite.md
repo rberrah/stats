@@ -15,14 +15,14 @@ quiz:
   - prompt: "Vous dosez deux fois de suite le même tube de sérum et trouvez 4,9 puis 5,1 mmol/L. À quelle source de variabilité attribuez-vous surtout cet écart ?"
     options:
       - "La variabilité de mesure (imprécision de la technique)"
-      - "La variabilité biologique entre individus"
-      - "La variabilité d'échantillonnage"
+      - "La variabilité biologique (vraie différence entre sujets)"
+      - "La variabilité d'échantillonnage (hasard du groupe tiré)"
     correct: 0
   - prompt: "Quelle phrase décrit le mieux le rôle de la statistique en biologie ?"
     options:
       - "Décider sous incertitude en quantifiant le risque de se tromper"
-      - "Supprimer la variabilité des mesures biologiques"
-      - "Prouver avec certitude qu'une hypothèse est vraie"
+      - "Supprimer la variabilité pour rendre les mesures identiques"
+      - "Prouver avec une totale certitude qu'une hypothèse est vraie"
     correct: 0
 ---
 

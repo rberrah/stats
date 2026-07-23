@@ -15,13 +15,13 @@ quiz:
   - prompt: "Vous voulez estimer la pression artérielle d'un patient à partir de son âge. De quel outil relève cette question ?"
     options:
       - "La régression, car on prédit une variable (PAS) à partir de l'autre (âge)"
-      - "La corrélation, car les deux variables sont quantitatives"
-      - "Aucun des deux : il faut un test du khi-deux"
+      - "La corrélation, car les deux caractères mesurés sont bien quantitatifs"
+      - "Un test de Student, car on compare la pression selon l'âge du patient"
     correct: 0
   - prompt: "Qu'est-ce qui distingue fondamentalement la corrélation de la régression ?"
     options:
       - "La corrélation décrit une liaison symétrique ; la régression choisit un sens pour prédire"
-      - "La corrélation s'applique aux petits échantillons, la régression aux grands"
+      - "La corrélation convient surtout aux petits échantillons, la régression aux grands effectifs"
       - "La corrélation concerne les variables qualitatives, la régression les quantitatives"
     correct: 0
 ---

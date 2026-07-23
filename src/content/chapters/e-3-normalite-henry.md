@@ -15,14 +15,14 @@ quiz:
   - prompt: "Sur une droite de Henry, les points s'alignent bien sur la droite. Qu'en concluez-vous ?"
     options:
       - "La distribution est compatible avec une loi normale"
-      - "Les données sont fortement asymétriques"
-      - "Il y a beaucoup de valeurs extrêmes"
+      - "La distribution est nettement asymétrique à droite"
+      - "Les queues de la distribution sont trop épaisses"
     correct: 0
   - prompt: "Vos données donnent une droite de Henry nettement incurvée (en forme de S ou d'arc). Le réflexe pratique le plus prudent est :"
     options:
-      - "Ignorer l'écart et appliquer un test t"
+      - "Appliquer le test t sans correction, on le dit robuste"
       - "Envisager une transformation (log) ou un test non paramétrique"
-      - "Augmenter le risque α pour compenser"
+      - "Augmenter l'effectif de l'échantillon pour rétablir la normalité"
     correct: 1
 ---
 

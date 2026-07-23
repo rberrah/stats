@@ -15,14 +15,14 @@ quiz:
   - prompt: "On observe une corrélation r = 0,50 entre café et risque cardiovasculaire. Après avoir tenu compte du tabac, la corrélation partielle chute à 0,02. Que conclure ?"
     options:
       - "La liaison café–risque était surtout due au tabac, facteur de confusion"
-      - "Le café protège du risque cardiovasculaire"
-      - "La corrélation partielle est fausse, il faut garder r = 0,50"
+      - "À tabac constant, le café garde un effet propre, faible mais bien réel"
+      - "La corrélation partielle se trompe, la vraie liaison reste bien r = 0,50"
     correct: 0
   - prompt: "À quoi sert une corrélation partielle entre x et y ?"
     options:
       - "À mesurer la liaison x–y une fois neutralisée l'influence d'une troisième variable z"
-      - "À additionner les corrélations de x et de y avec z"
-      - "À prouver que x est la cause de y"
+      - "À combiner en une seule valeur moyenne les corrélations de x et de y avec z"
+      - "À démontrer que x est bien la cause directe de y, une fois la variable z neutralisée"
     correct: 0
 ---
 

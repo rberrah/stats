@@ -16,19 +16,19 @@ quiz:
     options:
       - "de l'exposition, pour observer qui développe la maladie"
       - "de la maladie, pour rechercher l'exposition dans le passé"
-      - "d'un tirage au sort du traitement"
+      - "d'un tirage au sort du traitement attribué aux sujets"
     correct: 1
   - prompt: "La mesure de risque directement accessible dans une étude de cohorte est :"
     options:
-      - "l'odds ratio uniquement"
-      - "le risque relatif"
-      - "la valeur prédictive positive"
+      - "l'odds ratio seul, le risque relatif étant inaccessible"
+      - "le risque relatif entre exposés et non-exposés"
+      - "l'incidence seule, sans calcul possible du risque relatif"
     correct: 1
   - prompt: "Ce qui distingue fondamentalement l'essai randomisé des études observationnelles est :"
     options:
-      - "sa taille d'échantillon plus grande"
-      - "le tirage au sort de l'exposition, qui équilibre les facteurs de confusion"
-      - "l'absence de groupe témoin"
+      - "l'ajustement statistique de tous les facteurs de confusion"
+      - "le tirage au sort de l'exposition, qui neutralise la confusion"
+      - "le double aveugle, qui supprime tout biais de confusion"
     correct: 1
 ---
 

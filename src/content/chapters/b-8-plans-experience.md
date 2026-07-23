@@ -20,8 +20,8 @@ quiz:
     correct: 1
   - prompt: "Quel est l'avantage d'un plan factoriel (croiser les facteurs) par rapport à l'étude d'un seul facteur à la fois ?"
     options:
-      - "Il isole l'effet de chaque facteur en le faisant varier seul, les autres restant fixés."
-      - "Il réduit le nombre total de combinaisons à tester quand les facteurs sont nombreux."
+      - "Il isole proprement l'effet de chaque facteur en le faisant varier seul, tous les autres restant fixés."
+      - "Il réduit le nombre total de combinaisons expérimentales à tester lorsque les facteurs sont nombreux."
       - "Il estime l'effet de chaque facteur ET leurs interactions, pour un meilleur rendement des sujets."
     correct: 2
 ---

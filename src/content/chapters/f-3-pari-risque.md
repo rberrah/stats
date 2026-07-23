@@ -15,14 +15,14 @@ quiz:
   - prompt: "Dans un test statistique, l'hypothèse nulle H0 énonce en général :"
     options:
       - "L'absence de différence : « c'est le hasard qui explique tout »"
-      - "L'existence certaine d'un effet du traitement"
-      - "Que l'échantillon a été mal tiré au sort"
+      - "L'existence d'un effet réel et certain du traitement testé"
+      - "L'hypothèse que l'on cherche à démontrer comme étant vraie"
     correct: 0
   - prompt: "Un test ne montre pas de différence significative (p = 0,30). Que peut-on conclure ?"
     options:
-      - "On ne peut pas rejeter H0 : les données sont compatibles avec le hasard, sans le prouver"
-      - "H0 est démontrée : il n'y a aucune différence"
-      - "Le traitement est certainement inefficace"
+      - "On ne rejette pas H0 : compatible avec le hasard, mais non prouvé"
+      - "H0 est prouvée : l'absence de différence est établie avec certitude"
+      - "Le traitement est à coup sûr inefficace, sans aucun effet réel"
     correct: 0
 ---
 
