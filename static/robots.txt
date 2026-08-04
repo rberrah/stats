@@ -1,2 +1,9 @@
+# Stat & Biologie — https://rberrah.github.io/stats/
+# Note : sur GitHub Pages, seul https://rberrah.github.io/robots.txt (dépôt portail)
+# fait autorité pour l'ensemble du domaine. Ce fichier documente le sous-site et
+# déclare son sitemap, que l'on peut aussi soumettre directement à la Search Console.
+
 User-agent: *
 Allow: /
+
+Sitemap: https://rberrah.github.io/stats/sitemap.xml

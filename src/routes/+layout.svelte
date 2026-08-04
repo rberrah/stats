@@ -3,18 +3,15 @@
   import '$lib/styles/theme.css';
   import { base } from '$app/paths';
   import { page } from '$app/stores';
+  import { canonicalUrl, NAV_LINKS, LICENSE_LABEL, LICENSE_URL } from '$lib/site';
   let { children } = $props();
 
-  const links = [
-    { href: '/', key: 'home', label: 'Accueil' },
-    { href: '/chapitres', key: 'course', label: 'Le cours' },
-    { href: '/resume', key: 'resume', label: 'Résumé' },
-    { href: '/fiches', key: 'fiches', label: 'Fiches' },
-    { href: '/exercices', key: 'exercises', label: 'Entraînement' },
-    { href: '/glossaire', key: 'glossary', label: 'Glossaire' },
-    { href: '/references', key: 'refs', label: 'Références' },
-    { href: '/a-propos', key: 'about', label: 'À propos' }
-  ];
+  // URL canonique de la page courante : dérivée du chemin de route (pas du
+  // navigateur), donc identique au prérendu et en navigation client.
+  let canonical = $derived(canonicalUrl($page.url.pathname));
+
+  // Navigation et sitemap partagent la même liste (voir $lib/site.js).
+  const links = NAV_LINKS;
 
   let menuOpen = $state(false);
   const isActive = (/** @type {string} */ href) =>
@@ -25,6 +22,7 @@
 
 <svelte:head>
   <title>Stat &amp; Biologie</title>
+  <link rel="canonical" href={canonical} />
 </svelte:head>
 
 <a class="skip-link" href="#main-content">Aller au contenu</a>
@@ -53,9 +51,13 @@
   </main>
 
   <footer>
-    <span>Contenu pédagogique original · CC BY-NC-SA 4.0</span>
+    <span>
+      Contenu pédagogique original · Texte sous licence
+      <a href={LICENSE_URL} target="_blank" rel="license noopener noreferrer">{LICENSE_LABEL}</a>
+      · Code du site sous licence MIT
+    </span>
     <span class="muted">
-      Écrit et maintenu par Racym Berrah, PharmD, doctorant en pharmacométrie ·
+      Écrit et maintenu par Racym Berrah, PharmD, doctorant en pharmacologie ·
       <a href="https://github.com/rberrah/stats/issues/new" target="_blank" rel="noopener noreferrer">Une erreur ? Signalez-la</a>
     </span>
   </footer>

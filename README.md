@@ -48,4 +48,19 @@ Formules LaTeX rendues au build par KaTeX (`$inline$`, `$$bloc$$`).
 Servi sous `/stats`. En CI, `BASE_PATH=/stats` avant `npm run build` (voir
 `.github/workflows/deploy.yml`), puis publication du dossier `build/`.
 
+Référencement : `src/routes/sitemap.xml/+server.js` génère le sitemap au prérendu à partir
+des chapitres et de `NAV_LINKS` (`src/lib/site.js`) ; `static/robots.txt` le déclare. Les
+URL canoniques, l'attribution et les blocs JSON-LD dérivent tous des constantes de
+`src/lib/site.js` — c'est le seul endroit à modifier si l'URL publique change.
+
+## Licence
+
+- **Contenu** (textes, exemples chiffrés, visualisations) : [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.fr).
+  Réutilisation libre, **y compris en enseignement**, sous réserve de citer l'auteur et la
+  source et de partager les versions dérivées aux mêmes conditions.
+- **Code** du site : licence **MIT**.
+
+Auteur : Racym Berrah, PharmD ([ORCID 0009-0001-6432-2880](https://orcid.org/0009-0001-6432-2880)).
+Chaque chapitre porte un bloc « Citer cette page » (référence formatée + BibTeX).
+
 > Support pédagogique — ne remplace pas un cours complet ni les ouvrages de référence.

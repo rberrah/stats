@@ -1,5 +1,6 @@
 <script>
   import { base } from '$app/paths';
+  import { AUTHOR_URL, ORCID_URL, LICENSE_LABEL, LICENSE_URL } from '$lib/site';
 </script>
 
 <article class="about">
@@ -47,6 +48,29 @@
   <p>
     Support pédagogique d'entraide : il <strong>ne remplace pas</strong> un cours complet ni les
     ouvrages de référence, et peut contenir des imprécisions — toute correction est bienvenue.
+  </p>
+
+  <h2>Auteur</h2>
+  <p>
+    Écrit et maintenu par <a href={AUTHOR_URL}>Racym Berrah</a>, PharmD, doctorant en
+    pharmacologie (<a href={ORCID_URL} target="_blank" rel="noopener noreferrer me">ORCID
+    0009-0001-6432-2880</a>). Chaque chapitre indique sa date de dernière révision et ses
+    sources.
+  </p>
+
+  <h2>Licence et réutilisation</h2>
+  <p>
+    Les textes, exemples chiffrés et visualisations sont publiés sous licence
+    <a href={LICENSE_URL} target="_blank" rel="license noopener noreferrer">Creative Commons
+    Attribution – Partage dans les mêmes conditions 4.0 ({LICENSE_LABEL})</a>. Ils peuvent être
+    repris, adaptés et rediffusés — <strong>y compris dans un enseignement</strong> — à deux
+    conditions : citer l'auteur et la source, et placer les versions dérivées sous la même
+    licence. Le <strong>code source</strong> du site reste distribué séparément sous licence
+    <strong>MIT</strong>.
+  </p>
+  <p>
+    Chaque chapitre se termine par un bloc « Citer cette page » qui donne la référence
+    formatée et son entrée BibTeX.
   </p>
 
   <div class="cta">

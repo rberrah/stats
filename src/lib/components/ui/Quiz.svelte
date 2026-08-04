@@ -7,6 +7,11 @@
 
   // Mélange DÉTERMINISTE des options : la bonne réponse était presque toujours en position 0.
   // Permutation dérivée de l'énoncé (stable, SSR-safe) ; `answers` reste en indices d'origine.
+  /**
+   * @param {string} prompt
+   * @param {number} n
+   * @returns {number[]}
+   */
   function shuffleOrder(prompt, n) {
     let h = 2166136261;
     for (let k = 0; k < prompt.length; k++) { h ^= prompt.charCodeAt(k); h = Math.imul(h, 16777619); }

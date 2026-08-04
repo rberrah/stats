@@ -8,6 +8,8 @@
   import ExerciseBlock from '$lib/components/ui/ExerciseBlock.svelte';
   import MemoPanel from '$lib/components/ui/MemoPanel.svelte';
   import ChapterFooter from '$lib/components/ui/ChapterFooter.svelte';
+  import ChapterByline from '$lib/components/ui/ChapterByline.svelte';
+  import { canonicalUrl, jsonLdScript, authorNode, COURSE_NAME, LICENSE_URL, SITE_URL } from '$lib/site';
   import { exercisesForChapter } from '$lib/content/exercises';
   import { fade, fly } from 'svelte/transition';
   import { cubicOut } from 'svelte/easing';
@@ -30,6 +32,27 @@
     .map((/** @type {any} */ c) => ({ slug: c.slug, title: c.title }));
   $: glossaryTerms = chapter?.glossary ?? [];
   $: hasRecall = prereqs.length > 0 || glossaryTerms.length > 0;
+
+  // URL publique réelle de la page : sert à la balise canonique, au JSON-LD et à la
+  // citation. Dérivée du chemin de route, jamais du navigateur (prérendu oblige).
+  $: canonical = canonicalUrl($page.url.pathname);
+
+  // Données structurées : la page est une ressource pédagogique appartenant au cours.
+  // `dateModified` n'est émis que si le frontmatter porte une date de révision.
+  $: chapterJsonLd = chapter
+    ? jsonLdScript({
+        '@context': 'https://schema.org',
+        '@type': 'LearningResource',
+        name: chapter.title,
+        description: chapter.description,
+        url: canonical,
+        inLanguage: 'fr',
+        license: LICENSE_URL,
+        author: authorNode(),
+        isPartOf: { '@type': 'Course', name: COURSE_NAME, url: SITE_URL },
+        ...(chapter.reviewed_on ? { dateModified: chapter.reviewed_on } : {})
+      })
+    : '';
 
   let activeIndex = 0;
   /** @type {HTMLElement[]} */
@@ -107,6 +130,7 @@
 <svelte:head>
   {#if chapter}
     <title>{chapter.title} — Stat & Biologie</title>
+    {@html chapterJsonLd}
   {/if}
 </svelte:head>
 
@@ -122,6 +146,7 @@
     <a class="back" href={`${base}/chapitres`}>← Disciplines</a>
     <p class="eyebrow">{track?.title ?? ''}</p>
     <h1>{chapter.title}</h1>
+    <ChapterByline {chapter} />
     <p class="desc">{chapter.description}</p>
 
     {#if hasRecall}
@@ -170,7 +195,7 @@
         </section>
       {/if}
 
-      <ChapterFooter {chapter} />
+      <ChapterFooter {chapter} {canonical} />
 
       <nav class="chap-nav">
         {#if prev}

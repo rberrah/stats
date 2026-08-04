@@ -11,6 +11,9 @@ duration: "10 min"
 tags: ["mot-clé"]
 prerequisites: []      # slugs d'autres chapitres (affichés en « Rappels »)
 glossary: []           # termes du glossaire (src/lib/content/glossary.js)
+sources: []            # identifiants du pool fermé (src/lib/content/references.js)
+reviewed_on: ""        # AAAA-MM-JJ — sans date, la signature n'affiche pas de révision
+status: "brouillon"    # brouillon | relu | valide
 quiz:
   - prompt: "Question de vérification ?"
     options:

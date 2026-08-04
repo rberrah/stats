@@ -62,7 +62,7 @@ const files = import.meta.glob('../../content/chapters/*.md', { query: '?raw', i
 
 /**
  * @typedef {{title:string, html:string, viz?:string}} Step
- * @typedef {{id:string, slug:string, title:string, description:string, order:number, track:string, duration:string, tags:string[], prerequisites:string[], glossary:string[], quiz:{prompt:string,options:string[],correct:number}[], steps:Step[]}} Chapter
+ * @typedef {{id:string, slug:string, title:string, description:string, order:number, track:string, duration:string, programItem:string, theme:string, level:string, layer:string, tags:string[], prerequisites:string[], glossary:string[], sources:string[], reviewed_on:string, status:string, quiz:{prompt:string,options:string[],correct:number}[], steps:Step[]}} Chapter
  */
 
 const chapters = Object.entries(files)

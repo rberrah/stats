@@ -2,10 +2,32 @@
   import { base } from '$app/paths';
   import chapters from '$lib/content/loadChapters';
   import { tracks, chaptersByTrack } from '$lib/content/tracks';
+  import { jsonLdScript, authorNode, COURSE_NAME, LICENSE_URL, SITE_URL } from '$lib/site';
 
   const grouped = chaptersByTrack(chapters);
   const total = chapters.length;
+
+  // Données structurées du cours — déclarées UNE SEULE FOIS, sur cette page d'accueil.
+  // Les chapitres s'y rattachent par `isPartOf`.
+  const courseJsonLd = jsonLdScript({
+    '@context': 'https://schema.org',
+    '@type': 'Course',
+    name: COURSE_NAME,
+    description:
+      "Cours de biostatistique à l'usage des médecins et des biologistes : fluctuations d'échantillonnage, principe des tests, χ², comparaison de moyennes, analyse de la variance, corrélation et régression, tests non paramétriques, épidémiologie clinique et analyse de survie.",
+    url: SITE_URL,
+    inLanguage: 'fr',
+    license: LICENSE_URL,
+    author: authorNode(),
+    provider: authorNode(),
+    about: ['Biostatistique', 'Statistique médicale', 'Épidémiologie clinique'],
+    educationalLevel: 'Enseignement supérieur — santé'
+  });
 </script>
+
+<svelte:head>
+  {@html courseJsonLd}
+</svelte:head>
 
 <section class="hero">
   <p class="eyebrow">Biostatistique · médecine & biologie</p>

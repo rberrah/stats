@@ -1,11 +1,15 @@
 <script>
   // @ts-nocheck
   // Pied de chapitre : sources vérifiables (pool fermé), date de dernière révision,
-  // statut de relecture, et signalement d'erreur pré-rempli avec l'id du chapitre.
+  // statut de relecture, bloc de citation, et signalement d'erreur pré-rempli avec
+  // l'id du chapitre.
   import { resolveSources, refIdentifier } from '$lib/content/references';
+  import CiteBlock from '$lib/components/ui/CiteBlock.svelte';
 
   /** @type {any} */
   export let chapter = null;
+  /** URL canonique complète de la page, calculée par la route. */
+  export let canonical = '';
 
   $: sources = resolveSources(chapter?.sources);
   $: issueUrl =
@@ -41,6 +45,8 @@
     </section>
   {/if}
 
+  <CiteBlock {chapter} url={canonical} />
+
   <div class="meta">
     {#if st}<span class="badge {st.cls}">{st.label}</span>{/if}
     {#if chapter?.reviewed_on}<span class="rev">Dernière révision : {chapter.reviewed_on}</span>{/if}
@@ -58,7 +64,7 @@
   .sources a:hover { color: var(--accent-pk); border-color: var(--accent-pk); }
   .au, .wh { color: var(--text-muted); font-size: var(--text-xs); }
   .id { display: inline-block; margin-left: 6px; font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.02em; color: var(--accent-pk); background: color-mix(in srgb, var(--accent-pk) 10%, transparent); border-radius: 999px; padding: 1px 7px; white-space: nowrap; }
-  .meta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3); font-family: var(--font-mono); font-size: var(--text-xs); }
+  .meta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3); margin-top: var(--space-6); padding-top: var(--space-4); border-top: 1px solid var(--border-subtle); font-family: var(--font-mono); font-size: var(--text-xs); }
   .badge { padding: 2px 8px; border-radius: 999px; font-weight: 700; }
   .badge.ok { background: color-mix(in srgb, var(--accent-pk) 16%, var(--bg-primary)); color: var(--accent-pk); }
   .badge.read { background: var(--bg-secondary); color: var(--text-secondary); }
